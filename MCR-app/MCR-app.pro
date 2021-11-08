@@ -10,15 +10,26 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    signupdialog.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    signupdialog.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    signupdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    Images/icon.png \
+    Images/logo.png \
+    Images/whanau.2d006e8f.png
+
+RESOURCES += \
+    Resources.qrc
