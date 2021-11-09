@@ -17,8 +17,6 @@ public:
     ~MainWindow();
 
 private slots:
-
-
     void on_pushButton_start_clicked();
 
 private:
