@@ -23,6 +23,8 @@ private slots:
 
     void on_pushButton_verifyID_clicked();
 
+    void on_pushButton_adminLogin_clicked();
+
 private:
     Ui::MainWindow *ui;
     SignupDialog *signup_ui;

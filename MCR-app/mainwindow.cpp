@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "verifyid.h"
+#include "admin_login.h"
 
 
 MainWindow::MainWindow(QWidget *parent)     // constructor
@@ -41,5 +42,13 @@ void MainWindow::on_pushButton_verifyID_clicked()
     verifyid vid;
     vid.setModal(true);
     vid.exec();
+}
+
+
+void MainWindow::on_pushButton_adminLogin_clicked()
+{
+    Admin_login ad_login;
+    ad_login.setModal(true);
+    ad_login.exec();
 }
 
