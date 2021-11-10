@@ -3,5 +3,6 @@
         <file>Images/icon.png</file>
         <file>Images/logo.png</file>
         <file>Images/whanau.2d006e8f.png</file>
+        <file>txt/Users.txt</file>
     </qresource>
 </RCC>

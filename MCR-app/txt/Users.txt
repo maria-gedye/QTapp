@@ -1,2 +1,4 @@
 user1@gmail.com,user1
 usr2@gmail.com,user2
+testwidget@gmail.com,widget123
+widget2@gmail.com,widgets

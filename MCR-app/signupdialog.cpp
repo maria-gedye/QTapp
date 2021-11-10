@@ -6,7 +6,11 @@ SignupDialog::SignupDialog(QWidget *parent) :   // constructor
     ui(new Ui::SignupDialog)
 {
     ui->setupUi(this);
+
+    // connect the checkbox with the submit button
     QObject::connect(ui->checkBox, &QCheckBox::toggled, ui->pushButton_submit, &QPushButton::setEnabled);
+
+    // set attribute so that dialog will close on command
     this->setAttribute(Qt::WA_DeleteOnClose);
     this->show();
 }
@@ -25,7 +29,7 @@ void SignupDialog::on_pushButton_submit_clicked(bool checked)
 
         if(checked) {
       // this should be a function somewhere but I cant set up the User Class and also
-        // get this slot to perform the function from User Class - annoying!!
+        // get this slot to perform the function from User Class in here- annoying!!
             QFile file("/Users/mariagedye/QTapp/MCR-app/txt/Users.txt");
 
             if (!file.open(QFile::WriteOnly|QFile::Append|QFile::Text)) {

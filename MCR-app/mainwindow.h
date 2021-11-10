@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QWidget>
 #include "signupdialog.h"
 
 QT_BEGIN_NAMESPACE
@@ -17,7 +18,7 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_start_clicked();
+    void on_pushButton_start_3_clicked();
 
 private:
     Ui::MainWindow *ui;
