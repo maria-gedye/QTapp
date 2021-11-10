@@ -18,32 +18,32 @@ void verifyid::on_pushButton_submit_clicked()
 {
      QMessageBox outcome;
 
-    QFile file("Users.txt");
+    QFile file("/Users/rnrn/QTapp/MCR-app/txt");
     file.open(QIODevice::WriteOnly | QIODevice::Text);
     QTextStream out(&file);
 
     if(ui->radioButton_license->isChecked())
     {
         //out<<ui->radioButton_license->text();
-        out<<",Licence,";
+        out<<"Licence,";
         out<<ui->lineEdit_L1->text()<<",";
         out<<ui->lineEdit_L2->text()<<Qt::endl;
     }
     if(ui->radioButton_cc->isChecked())
     {
-        out<<",Citizenship certificate,";
+        out<<"Citizenship certificate,";
         out<<ui->lineEdit_CC1->text()<<",";
         out<<ui->lineEdit_CC2->text()<<Qt::endl;
     }
     if(ui->radioButton_cer->isChecked())
     {
-        out<<",Birth certificate,";
+        out<<"Birth certificate,";
         out<<ui->lineEdit_C1->text()<<",";
         out<<ui->lineEdit_C2->text()<<Qt::endl;
     }
     if(ui->radioButton_ppt->isChecked())
     {
-        out<<",Passport,";
+        out<<"Passport,";
         out<<ui->lineEdit_P1->text()<<",";
         out<<ui->lineEdit_P2->text()<<Qt::endl;
     }

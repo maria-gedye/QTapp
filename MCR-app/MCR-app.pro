@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     admin_login.cpp \
+    admin_menu.cpp \
     main.cpp \
     mainwindow.cpp \
     signupdialog.cpp \
@@ -17,12 +18,14 @@ SOURCES += \
 
 HEADERS += \
     admin_login.h \
+    admin_menu.h \
     mainwindow.h \
     signupdialog.h \
     verifyid.h
 
 FORMS += \
     admin_login.ui \
+    admin_menu.ui \
     mainwindow.ui \
     signupdialog.ui \
     verifyid.ui
@@ -36,6 +39,7 @@ DISTFILES += \
     Images/icon.png \
     Images/logo.png \
     Images/whanau.2d006e8f.png \
+    txt/IDs.txt \
     txt/Users.txt
 
 RESOURCES += \

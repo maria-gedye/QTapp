@@ -15,6 +15,9 @@ public:
     explicit Admin_login(QWidget *parent = nullptr);
     ~Admin_login();
 
+private slots:
+    void on_pushButton_adminLogin_clicked();
+
 private:
     Ui::Admin_login *ui;
 };
