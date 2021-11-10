@@ -30,7 +30,7 @@ void MainWindow::on_pushButton_start_3_clicked()
     signup_ui = new SignupDialog(this);
     signup_ui->show();
 
-    // when signup is complete navigate to index 1 of stackedwidget
+    // when signup is complete display user dashboard
     ui->stackedWidget->setCurrentIndex(1);
 }
 

@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page_Home">
      <widget class="QWidget" name="horizontalLayoutWidget_2">
@@ -237,9 +237,9 @@ p, li { white-space: pre-wrap; }
         <height>86</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <layout class="QHBoxLayout" name="horizontalLayout_8header">
        <item>
-        <widget class="QTextBrowser" name="textBrowser_6">
+        <widget class="QTextBrowser" name="textBrowser_2Logo">
          <property name="html">
           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -264,7 +264,7 @@ p, li { white-space: pre-wrap; }
         </spacer>
        </item>
        <item>
-        <widget class="QLabel" name="label_8">
+        <widget class="QLabel" name="label_8Email">
          <property name="minimumSize">
           <size>
            <width>100</width>
@@ -280,7 +280,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_admin_5">
+        <widget class="QPushButton" name="pushButton_Logout">
          <property name="minimumSize">
           <size>
            <width>80</width>
@@ -301,7 +301,7 @@ margin: 10, 10, 10, 10;</string>
        </item>
       </layout>
      </widget>
-     <widget class="QTextBrowser" name="textBrowser_9">
+     <widget class="QTextBrowser" name="textBrowser_title2">
       <property name="geometry">
        <rect>
         <x>590</x>
@@ -337,26 +337,6 @@ border-radius: 20px;</string>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QFrame" name="frame_3">
-       <property name="geometry">
-        <rect>
-         <x>530</x>
-         <y>40</y>
-         <width>531</width>
-         <height>311</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(222, 236, 252);
-border-radius: 20px;</string>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-      </widget>
       <widget class="QWidget" name="gridLayoutWidget_2">
        <property name="geometry">
         <rect>
@@ -368,7 +348,7 @@ border-radius: 20px;</string>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="4" column="1">
-         <widget class="QPushButton" name="pushButton_7">
+         <widget class="QPushButton" name="pushButton_verifyID">
           <property name="minimumSize">
            <size>
             <width>175</width>
@@ -457,7 +437,7 @@ margin: 10, 10, 10, 10;</string>
          </widget>
         </item>
         <item row="2" column="0" colspan="3">
-         <widget class="QTextBrowser" name="textBrowser_8">
+         <widget class="QTextBrowser" name="textBrowser_info2">
           <property name="styleSheet">
            <string notr="true">background-color: rgb(222, 236, 252);</string>
           </property>
@@ -494,26 +474,6 @@ border-radius: 20px;</string>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QFrame" name="frame_6">
-       <property name="geometry">
-        <rect>
-         <x>530</x>
-         <y>40</y>
-         <width>531</width>
-         <height>311</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(222, 236, 252);
-border-radius: 20px;</string>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-      </widget>
       <widget class="QWidget" name="verticalLayoutWidget_2">
        <property name="geometry">
         <rect>
@@ -525,7 +485,7 @@ border-radius: 20px;</string>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <widget class="QPushButton" name="pushButton_8">
+         <widget class="QPushButton" name="pushButton_reportIssue">
           <property name="minimumSize">
            <size>
             <width>160</width>
@@ -543,7 +503,7 @@ padding: 10,10,10,10;</string>
          </widget>
         </item>
         <item alignment="Qt::AlignLeft">
-         <widget class="QPushButton" name="pushButton_9">
+         <widget class="QPushButton" name="pushButton_changeLogin">
           <property name="minimumSize">
            <size>
             <width>160</width>
