@@ -11,15 +11,18 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    signupdialog.cpp
+    signupdialog.cpp \
+    verifyid.cpp
 
 HEADERS += \
     mainwindow.h \
-    signupdialog.h
+    signupdialog.h \
+    verifyid.h
 
 FORMS += \
     mainwindow.ui \
-    signupdialog.ui
+    signupdialog.ui \
+    verifyid.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

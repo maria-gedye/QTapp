@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "verifyid.h"
 
 
 MainWindow::MainWindow(QWidget *parent)     // constructor
@@ -32,5 +33,13 @@ void MainWindow::on_pushButton_start_3_clicked()
 
     // when signup is complete display user dashboard
     ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_pushButton_verifyID_clicked()
+{
+    verifyid vid;
+    vid.setModal(true);
+    vid.exec();
 }
 

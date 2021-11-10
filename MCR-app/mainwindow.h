@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QWidget>
 #include "signupdialog.h"
+#include "verifyid.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,6 +20,8 @@ public:
 
 private slots:
     void on_pushButton_start_3_clicked();
+
+    void on_pushButton_verifyID_clicked();
 
 private:
     Ui::MainWindow *ui;

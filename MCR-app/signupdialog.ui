@@ -299,7 +299,7 @@ p, li { white-space: pre-wrap; }
        <enum>Qt::RightToLeft</enum>
       </property>
       <property name="autoFillBackground">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(255, 255, 255);
@@ -367,7 +367,7 @@ p, li { white-space: pre-wrap; }
   <widget class="QPushButton" name="pushButton_submit">
    <property name="geometry">
     <rect>
-     <x>200</x>
+     <x>210</x>
      <y>330</y>
      <width>211</width>
      <height>71</height>
