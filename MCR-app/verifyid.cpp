@@ -17,6 +17,7 @@ verifyid::~verifyid()
 void verifyid::on_pushButton_submit_clicked()
 {
      User usr;
+     bool verified;
 
     // check ID
     QString ID1, ID2, IDSearch;
@@ -50,7 +51,12 @@ void verifyid::on_pushButton_submit_clicked()
         IDSearch = ID1 + ',' + ID2;
     }
 
-    usr.isVerified(IDSearch); // defined in user.h
+    verified = usr.isVerified(IDSearch); // defined in user.h
+
+    if (verified)
+        usr.setID(&usr, ID1, ID2);
+
+    usr.setVerification(&usr, verified);
 
     this->close();
 }

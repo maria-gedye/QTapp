@@ -46,6 +46,22 @@ void MainWindow::on_pushButton_verifyID_clicked()
     verifyid vid;
     vid.setModal(true);
     vid.exec();
+    // if verified display userdahboard
+        User u1;
+        bool verified;
+        QString name;
+
+        verified = u1.getVerification();
+        name = u1.getName(); // returns QString for greeting
+
+           if (verified) {
+                ui->stackedWidget->setCurrentIndex(3);  // goto userdashboard window
+                               ui->label_2Email->setText("Kia ora " + name);
+            } else {
+                ui->stackedWidget->setCurrentIndex(2);  // goto userdashboard window
+
+            }
+
 }
 
 
@@ -67,21 +83,28 @@ void MainWindow::on_pushButton_loginUsr_clicked()
 void MainWindow::on_pushButton_loginsubmit_clicked()
 {
     User u1;
+    bool loggedin, verified;
+    QString name;
+
     // check credentials
     QString email, password, usrSearch;
     email = ui->lineEdit_loginEmail->text();
     password = ui->lineEdit_loginPassword->text();
     usrSearch = email + ',' + password;
 
-    u1.login(usrSearch); // returns a bool
+    loggedin = u1.login(usrSearch); // returns a bool for login status
+    verified = u1.getVerification();
+    name = u1.getName(); // returns QString for greeting
 
-    //            if (user is verified)
-    //             ui->stackedWidget->setCurrentIndex(3);  // goto userdashboard window
-    //                            ui->label_2Email->setText("Kia ora " + user firstName);
-    //            else
-                    ui->stackedWidget->setCurrentIndex(2);  // goto userdashboard window
+       if (loggedin && verified) {
+           u1.setLogin(&u1, email, password);
+            ui->stackedWidget->setCurrentIndex(3);  // goto userdashboard window
+                           ui->label_2Email->setText("Kia ora " + name);
+        } else {
+            ui->stackedWidget->setCurrentIndex(2);  // goto userdashboard window
 
-                    ui->label_2Email->setText(email);
+            ui->label_2Email->setText(email);
+        }
 
 }
 

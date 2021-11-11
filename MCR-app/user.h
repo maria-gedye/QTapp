@@ -27,6 +27,47 @@ public:
         ID2 = i2;
     }
 
+
+    void setName(User* usr, int p) {
+
+        QString newpath = QDir::currentPath();
+        QFile file(newpath + "/" + "IDs.txt");  // relative path using QDir::currentPath()
+
+        if(!file.open(QFile::ReadOnly|QFile::Text)) {
+            qDebug() << "File not open";
+        }
+
+        QTextStream in(&file);
+        QString line;
+        QStringList names;
+        in.seek(p);
+        line = in.readLine();
+        qInfo() << "line read:  " << line;
+        names = line.split(",");
+        usr->firstName = names[0];
+        usr->surname = names[1];
+        qInfo() << usr->firstName << " " << usr->surname;
+
+    }
+
+
+    QString getName() {
+        return firstName;
+    }
+
+    void setID(User* usr, QString i1, QString i2) {
+        usr->ID1 = i1;
+        usr->ID2 = i2;
+    }
+
+    void setVerification(User* usr, bool v) {
+        usr->IDverified = v;
+    }
+
+    bool getVerification() {
+        return IDverified;
+    }
+
     bool isVerified(QString s) {    // gets called in verifyid.cpp
 
              QMessageBox outcome;
@@ -42,14 +83,22 @@ public:
             QTextStream in(&file);
             QString line;
             bool found = false;
+            int currPos;
+            User usr;
 
             while(!in.atEnd()) {
                 line = in.readLine();
                 if (line == s) {
                     found = true;
                     qInfo() << "ID found" << line << found;
+                    currPos = in.pos();
+                    usr.setName(&usr, currPos);
+
+
+
                     outcome.setText("Your ID has been verified!");
                     outcome.exec();
+                    break;
 
                 } else {
                     qInfo() << "Current readline:  " << line << "  " << found;
@@ -67,7 +116,15 @@ public:
     }
 
 
-    bool login(QString s) {
+
+    void setLogin(User* usr, QString e, QString p) {
+        usr->email = e;
+        usr->password = p;
+    }
+
+
+
+    bool login(QString s) {     // called in mainwindow.cpp
 
         QMessageBox info;
 
@@ -98,7 +155,6 @@ public:
             if (!found) {
                 info.setText("Wrong email or password");
                 info.exec();
-                found = false;
            }
 
         return found;

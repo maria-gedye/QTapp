@@ -27,11 +27,15 @@ public:
               }
 
               QTextStream out(&file);
-              out << "firstName" << "," << "surname" << "," << "ID1" << "," << "ID2" << "\n";
-              out << "Pia" << "," << "Desai"<< "," << "MCR123"<< "," << "101"<< "\n";
-               out << "Farhan" << "," << "Khan"<< "," << "MCR456"<< "," << "102"<< "\n";
-                out << "John" << "," << "Doe"<< "," << "MCR789"<< "," << "103"<< "\n";
-                 out << "Jane" << "," << "Doe"<< "," << "MCR112"<< "," << "104"<< "\n";
+//              out << "firstName" << "," << "surname" << "," << "ID1" << "," << "ID2" << "\n";
+              out << "MCR123"<< "," << "101" << "\n";
+                        out << "Pia" << "," << "Desai"<< ","<< "\n";
+               out << "MCR456"<< "," << "102" << "\n";
+                        out << "Farhan" << "," << "Khan"<< ","<< "\n";
+                out << "MCR789"<< "," << "103"<< "\n";
+                        out  << "John" << "," << "Doe"<< ","  << "\n";
+                 out << "MCR112"<< "," << "104"<< "\n";
+                        out << "Jane" << "," << "Doe"<< "," << "\n";
 
                  qInfo() << "IDs loaded";
 
