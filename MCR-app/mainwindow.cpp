@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "verifyid.h"
 #include "admin_login.h"
+#include "userqr.h"
 
 
 MainWindow::MainWindow(QWidget *parent)     // constructor
@@ -94,5 +95,18 @@ void MainWindow::on_pushButton_2Logout_clicked()
 void MainWindow::on_pushButton_3Logout_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);  // goto home
+}
+
+
+void MainWindow::on_pushButton_testuserqr_clicked()
+{
+    userqr uqr;
+    uqr.setModal(true);
+    uqr.exec();
+}
+
+void MainWindow::on_pushButton_testadminqr_clicked()
+{
+
 }
 

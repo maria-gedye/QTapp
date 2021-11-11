@@ -38,6 +38,10 @@ private slots:
 
     void on_pushButton_3Logout_clicked();
 
+    void on_pushButton_testuserqr_clicked();
+
+    void on_pushButton_testadminqr_clicked();
+
 private:
     Ui::MainWindow *ui;
     SignupDialog *signup_ui;
