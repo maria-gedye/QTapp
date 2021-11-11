@@ -13,6 +13,97 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>80</y>
+     <width>591</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:48pt; 
+font-weight:600;
+color:#042d6d</string>
+   </property>
+   <property name="text">
+    <string>My Covid Record
+Administrator Main Menu</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>240</y>
+     <width>611</width>
+     <height>292</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_manage_user">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(231,241,248,255);
+color: rgba(18,113,188,255);
+font-size:18pt; font-weight:400; 
+border: none;
+padding: 10,10,10,10;
+margin: 10, 10, 10, 10;</string>
+      </property>
+      <property name="text">
+       <string>Manage user</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_manage_RT">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(231,241,248,255);
+color: rgba(18,113,188,255);
+font-size:18pt; font-weight:400; 
+border: none;
+padding: 10,10,10,10;
+margin: 10, 10, 10, 10;</string>
+      </property>
+      <property name="text">
+       <string>Manage Record / Test</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_issues">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(231,241,248,255);
+color: rgba(18,113,188,255);
+font-size:18pt; font-weight:400; 
+border: none;
+padding: 10,10,10,10;
+margin: 10, 10, 10, 10;</string>
+      </property>
+      <property name="text">
+       <string>Reported issue</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_logout">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(254,234,191,255);
+color: rgba(251,146,44,255);
+font-size:18pt; font-weight:400; 
+border: none;
+padding: 10,10,10,10;
+margin: 10, 10, 10, 10;</string>
+      </property>
+      <property name="text">
+       <string>Logout</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <resources/>
  <connections/>
