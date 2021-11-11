@@ -15,6 +15,7 @@ SOURCES += \
     mainwindow.cpp \
     signupdialog.cpp \
     user.cpp \
+    userqr.cpp \
     verifyid.cpp
 
 HEADERS += \
@@ -23,6 +24,7 @@ HEADERS += \
     mainwindow.h \
     signupdialog.h \
     user.h \
+    userqr.h \
     verifyid.h
 
 FORMS += \
@@ -30,6 +32,7 @@ FORMS += \
     admin_menu.ui \
     mainwindow.ui \
     signupdialog.ui \
+    userqr.ui \
     verifyid.ui
 
 # Default rules for deployment.

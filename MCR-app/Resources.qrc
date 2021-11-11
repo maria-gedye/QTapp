@@ -8,5 +8,7 @@
         <file>txt/Vaccines.txt</file>
         <file>Images/test.png</file>
         <file>Images/vaccine.png</file>
+        <file>Images/qrcode1.png</file>
+        <file>Images/stock-photo-random-generated-qr-code-abstract-pattern-103027724.jpg</file>
     </qresource>
 </RCC>
