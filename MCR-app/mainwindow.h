@@ -5,6 +5,8 @@
 #include <QWidget>
 #include "signupdialog.h"
 #include "verifyid.h"
+#include "user.h"
+#include "admin.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,7 +20,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    User *currUser;
+    QVector<User> users;
+
 
 private slots:
     void on_pushButton_start_3_clicked();

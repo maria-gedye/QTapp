@@ -13,6 +13,7 @@ SignupDialog::SignupDialog(QWidget *parent) :   // constructor
     // set attribute so that dialog will close on command
     this->setAttribute(Qt::WA_DeleteOnClose);
     this->show();
+
 }
 
 SignupDialog::~SignupDialog()       // destructor

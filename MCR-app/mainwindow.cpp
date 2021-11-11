@@ -33,13 +33,15 @@ void MainWindow::on_pushButton_start_3_clicked()
     signup_ui = new SignupDialog(this);
     signup_ui->show();
 
-    ui->stackedWidget->setCurrentIndex(1);
-//    ui->label_8Email->setText(someQString);
+    ui->stackedWidget->setCurrentIndex(1);  // go to login
 }
 
 
 void MainWindow::on_pushButton_verifyID_clicked()
 {
+     Admin a1;
+     a1.loadIDs();
+
     verifyid vid;
     vid.setModal(true);
     vid.exec();
@@ -63,38 +65,22 @@ void MainWindow::on_pushButton_loginUsr_clicked()
 
 void MainWindow::on_pushButton_loginsubmit_clicked()
 {
+    User u1;
     // check credentials
     QString email, password, usrSearch;
     email = ui->lineEdit_loginEmail->text();
     password = ui->lineEdit_loginPassword->text();
     usrSearch = email + ',' + password;
 
-    QString newpath = QDir::currentPath();
+    u1.login(usrSearch); // returns a bool
 
-//    QFile file("/Users/mariagedye/QTapp/MCR-app/txt/Users.txt");  // absolute path
-//      QFile file(":/new/prefix1/txt/Users.txt");  // resource filepath
-     QFile file(newpath + "/" + "Users.txt");  // relative path using QDir::currentPath()
-    if(!file.open(QFile::ReadOnly|QFile::Text)) {
-        qDebug() << "File not open";
-    }
+    //            if (user is verified)
+    //             ui->stackedWidget->setCurrentIndex(3);  // goto userdashboard window
+    //                            ui->label_2Email->setText("Kia ora " + user firstName);
+    //            else
+                    ui->stackedWidget->setCurrentIndex(2);  // goto userdashboard window
 
-    QTextStream in(&file);
-    QString line;
-    bool found = false;
-
-    while(!in.atEnd()) {
-        line = in.readLine();
-        if (line == usrSearch) {
-            found = true;
-            qInfo() << "User found " << line << found;
-             ui->stackedWidget->setCurrentIndex(2);  // goto userdashboard window
-        } else {
-            qInfo() << "Current readline:  " << line << "  " << found;
-        }
-    }
-
-    if (!found)
-        QMessageBox::information(this, "Login","Wrong email or password");
+                    ui->label_2Email->setText(email);
 
 }
 

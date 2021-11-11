@@ -9,6 +9,7 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    admin.cpp \
     admin_login.cpp \
     admin_menu.cpp \
     main.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
     verifyid.cpp
 
 HEADERS += \
+    admin.h \
     admin_login.h \
     admin_menu.h \
     mainwindow.h \
