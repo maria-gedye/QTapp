@@ -18,12 +18,22 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    User *currUser;
+
 private slots:
     void on_pushButton_start_3_clicked();
 
     void on_pushButton_verifyID_clicked();
 
     void on_pushButton_adminLogin_clicked();
+
+    void on_pushButton_loginUsr_clicked();
+
+    void on_pushButton_loginsubmit_clicked();
+
+    void on_pushButton_2Logout_clicked();
+
+    void on_pushButton_3Logout_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -14,6 +14,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     signupdialog.cpp \
+    user.cpp \
     verifyid.cpp
 
 HEADERS += \
@@ -21,6 +22,7 @@ HEADERS += \
     admin_menu.h \
     mainwindow.h \
     signupdialog.h \
+    user.h \
     verifyid.h
 
 FORMS += \
