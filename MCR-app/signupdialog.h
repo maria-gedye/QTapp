@@ -18,8 +18,6 @@ public:
     explicit SignupDialog(QWidget *parent = nullptr);
     ~SignupDialog();
 
-    User *currUser;
-
 private slots:
     void on_pushButton_submit_clicked(bool checked);
 

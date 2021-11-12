@@ -20,7 +20,15 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    QVector<User> users;
+    User MWcurUsr;
+    User *curUsr = &MWcurUsr;
+
+    void delay()
+    {
+        QTime dieTime= QTime::currentTime().addSecs(5);
+        while (QTime::currentTime() < dieTime)
+            QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
+    }
 
 
 private slots:
@@ -45,5 +53,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     SignupDialog *signup_ui;
+    verifyid *verify_ui;
 };
 #endif // MAINWINDOW_H

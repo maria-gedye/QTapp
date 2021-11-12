@@ -27,8 +27,14 @@ public:
         ID2 = i2;
     }
 
+    void printInfo() {
+        qInfo() << firstName << " " << surname;
+        qInfo() << email << " " << password;
+        qInfo() << "ID verified? " << IDverified;
+        qInfo() << "ID:  " << ID1 << "  " << ID2;
+    }
 
-    void setName(User* usr, int p) {
+    void setName(User* usr, int p) {    // called in isVerified()
 
         QString newpath = QDir::currentPath();
         QFile file(newpath + "/" + "IDs.txt");  // relative path using QDir::currentPath()
@@ -55,20 +61,26 @@ public:
         return firstName;
     }
 
-    void setID(User* usr, QString i1, QString i2) {
+    void setID(User* usr, QString i1, QString i2, bool v, QString n) {
         usr->ID1 = i1;
         usr->ID2 = i2;
-    }
-
-    void setVerification(User* usr, bool v) {
         usr->IDverified = v;
+        usr->firstName = n;
     }
 
     bool getVerification() {
         return IDverified;
     }
 
-    bool isVerified(QString s) {    // gets called in verifyid.cpp
+    QString getID1() {
+        return ID1;
+    }
+
+    QString getID2() {
+        return ID2;
+    }
+
+    bool isVerified(User* usr, QString s) {    // gets called in verifyid.cpp
 
              QMessageBox outcome;
 
@@ -84,7 +96,6 @@ public:
             QString line;
             bool found = false;
             int currPos;
-            User usr;
 
             while(!in.atEnd()) {
                 line = in.readLine();
@@ -92,8 +103,7 @@ public:
                     found = true;
                     qInfo() << "ID found" << line << found;
                     currPos = in.pos();
-                    usr.setName(&usr, currPos);
-
+                    usr->setName(usr, currPos);
 
 
                     outcome.setText("Your ID has been verified!");
@@ -108,7 +118,7 @@ public:
             file.close();
 
             if (!found) {
-                outcome.setText("We can't verify your ID. Please contact the MCR Help team by \n reporting an issue or email MCRhelp@gmail.com");
+                outcome.setText("We can't verify your ID. Please contact the MCR Help team by reporting an issue or email MCRhelp@gmail.com");
                 outcome.exec();
              }
 
@@ -144,8 +154,10 @@ public:
                 if (line == s) {
                     found = true;
                     qInfo() << "User found " << line << found;
+                    break;
 
                 } else {
+                    found = false;
                     qInfo() << "Current readline:  " << line << "  " << found;
                 }
             }

@@ -2,7 +2,6 @@
 #define ADMIN_H
 
 #include "ui_mainwindow.h"
-#include "user.h"
 
 #include <QObject>
 #include <QFile>

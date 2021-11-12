@@ -17,6 +17,7 @@ MainWindow::MainWindow(QWidget *parent)     // constructor
     ui->label_3_mainimage->setScaledContents(true);
 
     ui->stackedWidget->setCurrentIndex(0);
+
 }
 
 MainWindow::~MainWindow()   // destructor
@@ -43,26 +44,32 @@ void MainWindow::on_pushButton_verifyID_clicked()
      Admin a1;
      a1.loadIDs();
 
-    verifyid vid;
-    vid.setModal(true);
-    vid.exec();
-    // if verified display userdahboard
-        User u1;
-        bool verified;
-        QString name;
+     verify_ui = new verifyid(this);
+     verify_ui->show();
 
-        verified = u1.getVerification();
-        name = u1.getName(); // returns QString for greeting
+    QString ID1, ID2, FirstName;
+    bool verified;
 
-           if (verified) {
-                ui->stackedWidget->setCurrentIndex(3);  // goto userdashboard window
-                               ui->label_2Email->setText("Kia ora " + name);
-            } else {
-                ui->stackedWidget->setCurrentIndex(2);  // goto userdashboard window
+     delay(); // wait before executing rest of the function
+     int count = 0;
 
-            }
+verify_again:
+        verify_ui->getVerifyDialogOutput(ID1, ID2, FirstName, verified);
+        curUsr->setID(curUsr, ID1, ID2, verified, FirstName);
+        qInfo() << "verifybutton: ";
+        qInfo() << ID1 << " " << ID2 << " " << FirstName << " " << verified;
 
-}
+     if (verified) {
+         ui->stackedWidget->setCurrentIndex(3);
+        ui->label_3Name->setText("Kia ora " + FirstName);
+     } else {
+         count++;
+         delay();
+         if (count < 5)
+            goto verify_again;
+     }
+
+} // end of verify ID function
 
 
 void MainWindow::on_pushButton_adminLogin_clicked()
@@ -82,9 +89,8 @@ void MainWindow::on_pushButton_loginUsr_clicked()
 
 void MainWindow::on_pushButton_loginsubmit_clicked()
 {
-    User u1;
-    bool loggedin, verified;
-    QString name;
+
+    bool loggedin;
 
     // check credentials
     QString email, password, usrSearch;
@@ -92,21 +98,16 @@ void MainWindow::on_pushButton_loginsubmit_clicked()
     password = ui->lineEdit_loginPassword->text();
     usrSearch = email + ',' + password;
 
-    loggedin = u1.login(usrSearch); // returns a bool for login status
-    verified = u1.getVerification();
-    name = u1.getName(); // returns QString for greeting
+    loggedin = curUsr->login(usrSearch); // returns a bool after file read
 
-       if (loggedin && verified) {
-           u1.setLogin(&u1, email, password);
-            ui->stackedWidget->setCurrentIndex(3);  // goto userdashboard window
-                           ui->label_2Email->setText("Kia ora " + name);
-        } else {
-            ui->stackedWidget->setCurrentIndex(2);  // goto userdashboard window
+    curUsr->setLogin(curUsr, email, password); //works!
 
-            ui->label_2Email->setText(email);
-        }
+    if (loggedin) {
+        ui->stackedWidget->setCurrentIndex(2);
+           ui->label_2Email->setText(email);
+    }
 
-}
+} // end of login function
 
 
 void MainWindow::on_pushButton_2Logout_clicked()

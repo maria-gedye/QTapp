@@ -16,7 +16,7 @@ verifyid::~verifyid()
 
 void verifyid::on_pushButton_submit_clicked()
 {
-     User usr;
+
      bool verified;
 
     // check ID
@@ -51,12 +51,16 @@ void verifyid::on_pushButton_submit_clicked()
         IDSearch = ID1 + ',' + ID2;
     }
 
-    verified = usr.isVerified(IDSearch); // defined in user.h
+    verified = curUsr->isVerified(curUsr, IDSearch); // defined in user.h also calls setName()
 
-    if (verified)
-        usr.setID(&usr, ID1, ID2);
+    if (verified) {
+        QString name = curUsr->getName();
+        curUsr->setID(curUsr, ID1, ID2, verified, name);  // works!
+    }
 
-    usr.setVerification(&usr, verified);
+
+    qInfo() << "verified status: " << verified;
+    VIusr.printInfo(); // see what prints
 
     this->close();
 }
