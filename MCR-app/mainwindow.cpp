@@ -296,6 +296,14 @@ void MainWindow::on_pushButton_1back_clicked()
 
 void MainWindow::on_pushButton_3reportIssue_clicked()
 {
+    report_issues_ui = new report_issues(this);
+    report_issues_ui->show();
+}
 
+
+void MainWindow::on_pushButton_2reportIssue_clicked()
+{
+    report_issues_ui = new report_issues(this);
+    report_issues_ui->show();
 }
 

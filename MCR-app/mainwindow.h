@@ -7,8 +7,10 @@
 #include <QWidget>
 #include <QListWidget>
 #include <QString>
+
 #include "signupdialog.h"
 #include "verifyid.h"
+#include "report_issues.h"
 #include "user.h"
 #include "admin.h"
 
@@ -60,9 +62,13 @@ private slots:
 
     void on_pushButton_3reportIssue_clicked();
 
+    void on_pushButton_2reportIssue_clicked();
+
 private:
     Ui::MainWindow *ui;
     SignupDialog *signup_ui;
     verifyid *verify_ui;
+    report_issues *report_issues_ui;
+
 };
 #endif // MAINWINDOW_H

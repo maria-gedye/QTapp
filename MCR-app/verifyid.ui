@@ -23,7 +23,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font-size:20pt; font-weight:500;</string>
+    <string notr="true">font-size:20pt; font-weight:500;
+color: rgb(4, 45, 109);</string>
    </property>
    <property name="text">
     <string>PASSPORT</string>
@@ -39,7 +40,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font-size:20pt; font-weight:500;</string>
+    <string notr="true">font-size:20pt; font-weight:500;
+color: rgb(4, 45, 109);</string>
    </property>
    <property name="text">
     <string>LICENSE</string>
@@ -54,6 +56,10 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(16, 16, 16);
+background-color: rgb(255, 255, 255);</string>
+   </property>
   </widget>
   <widget class="QLabel" name="label_l1">
    <property name="geometry">
@@ -63,6 +69,9 @@
      <width>151</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(4, 45, 109);</string>
    </property>
    <property name="text">
     <string>Enter license number</string>
@@ -76,6 +85,9 @@
      <width>151</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(4, 45, 109);</string>
    </property>
    <property name="text">
     <string>Enter registered date</string>
@@ -110,6 +122,10 @@ margin: 10, 10, 10, 10;</string>
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(16, 16, 16);
+background-color: rgb(255, 255, 255);</string>
+   </property>
   </widget>
   <widget class="QLabel" name="label_p2">
    <property name="geometry">
@@ -119,6 +135,9 @@ margin: 10, 10, 10, 10;</string>
      <width>151</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(4, 45, 109);</string>
    </property>
    <property name="text">
     <string>Enter expiry date</string>
@@ -133,6 +152,10 @@ margin: 10, 10, 10, 10;</string>
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(16, 16, 16);
+background-color: rgb(255, 255, 255);</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_4CC1">
    <property name="geometry">
@@ -142,6 +165,10 @@ margin: 10, 10, 10, 10;</string>
      <width>211</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(16, 16, 16);
+background-color: rgb(255, 255, 255);</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3P1">
@@ -153,6 +180,10 @@ margin: 10, 10, 10, 10;</string>
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(16, 16, 16);
+background-color: rgb(255, 255, 255);</string>
+   </property>
   </widget>
   <widget class="QLabel" name="label_c2">
    <property name="geometry">
@@ -162,6 +193,9 @@ margin: 10, 10, 10, 10;</string>
      <width>151</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(4, 45, 109);</string>
    </property>
    <property name="text">
     <string>Enter registered date</string>
@@ -175,6 +209,9 @@ margin: 10, 10, 10, 10;</string>
      <width>151</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(4, 45, 109);</string>
    </property>
    <property name="text">
     <string>Enter passport number</string>
@@ -190,7 +227,8 @@ margin: 10, 10, 10, 10;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font-size:20pt; font-weight:500;</string>
+    <string notr="true">font-size:20pt; font-weight:500;
+color: rgb(4, 45, 109);</string>
    </property>
    <property name="text">
     <string>CITIZENSHIP CERTIFICATE</string>
@@ -205,6 +243,9 @@ margin: 10, 10, 10, 10;</string>
      <height>16</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(4, 45, 109);</string>
+   </property>
    <property name="text">
     <string>Enter version number</string>
    </property>
@@ -218,6 +259,10 @@ margin: 10, 10, 10, 10;</string>
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(16, 16, 16);
+background-color: rgb(255, 255, 255);</string>
+   </property>
   </widget>
   <widget class="QRadioButton" name="radioButton_cer">
    <property name="geometry">
@@ -229,7 +274,8 @@ margin: 10, 10, 10, 10;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font-size:20pt; font-weight:500;</string>
+    <string notr="true">font-size:20pt; font-weight:500;
+color: rgb(4, 45, 109);</string>
    </property>
    <property name="text">
     <string>BIRTH CERTIFICATE</string>
@@ -243,6 +289,10 @@ margin: 10, 10, 10, 10;</string>
      <width>211</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(16, 16, 16);
+background-color: rgb(255, 255, 255);</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_select">
@@ -271,6 +321,9 @@ and enter folloing information.</string>
      <width>151</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(4, 45, 109);</string>
    </property>
    <property name="text">
     <string>Enter certificate number</string>
@@ -302,6 +355,9 @@ font-size:45pt; font-weight:600;</string>
      <height>16</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(4, 45, 109);</string>
+   </property>
    <property name="text">
     <string>Enter certificate number</string>
    </property>
@@ -332,6 +388,10 @@ we need to be 100% sure that You are You.</string>
      <width>211</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(16, 16, 16);
+background-color: rgb(255, 255, 255);</string>
    </property>
   </widget>
  </widget>
