@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
 #include "verifyid.h"
 #include "admin_login.h"
 #include "userqr.h"
@@ -132,5 +131,11 @@ void MainWindow::on_pushButton_testuserqr_clicked()
 void MainWindow::on_pushButton_testadminqr_clicked()
 {
 
+}
+
+
+void MainWindow::on_pushButton_LoadTable_clicked()
+{
+    qInfo() << "Hello";
 }
 

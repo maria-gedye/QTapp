@@ -1,6 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "ui_mainwindow.h"
+
 #include <QMainWindow>
 #include <QWidget>
 #include "signupdialog.h"
@@ -49,6 +51,8 @@ private slots:
     void on_pushButton_testuserqr_clicked();
 
     void on_pushButton_testadminqr_clicked();
+
+    void on_pushButton_LoadTable_clicked();
 
 private:
     Ui::MainWindow *ui;

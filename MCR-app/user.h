@@ -1,8 +1,6 @@
 #ifndef USER_H
 #define USER_H
 
-#include "ui_mainwindow.h"
-
 #include <QObject>
 #include <QMessageBox>
 #include <QFile>

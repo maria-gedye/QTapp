@@ -1,8 +1,6 @@
 #ifndef ADMIN_H
 #define ADMIN_H
 
-#include "ui_mainwindow.h"
-
 #include <QObject>
 #include <QFile>
 #include <QTextStream>
