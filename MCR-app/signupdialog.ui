@@ -306,8 +306,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(222, 236, 252);
-align-vertical: top;</string>
+background-color: rgb(222, 236, 252);</string>
       </property>
       <property name="text">
        <string/>

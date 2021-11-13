@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="page_Home">
      <widget class="QWidget" name="horizontalLayoutWidget_2">
@@ -966,6 +966,37 @@ margin: 10, 10, 10, 10;</string>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <tabstops>
+  <tabstop>pushButton_start_3</tabstop>
+  <tabstop>pushButton_loginUsr</tabstop>
+  <tabstop>pushButton_adminLogin</tabstop>
+  <tabstop>pushButton_testuserqr</tabstop>
+  <tabstop>pushButton_testadminqr</tabstop>
+  <tabstop>lineEdit_loginEmail</tabstop>
+  <tabstop>lineEdit_loginPassword</tabstop>
+  <tabstop>pushButton_loginsubmit</tabstop>
+  <tabstop>textBrowser_Logo</tabstop>
+  <tabstop>textBrowser_mainTitle</tabstop>
+  <tabstop>textBrowser_logintitle</tabstop>
+  <tabstop>pushButton_1back</tabstop>
+  <tabstop>textBrowser_2Logo</tabstop>
+  <tabstop>pushButton_2Logout</tabstop>
+  <tabstop>textBrowser_2subhead</tabstop>
+  <tabstop>pushButton_verifyID</tabstop>
+  <tabstop>textBrowser_2info</tabstop>
+  <tabstop>pushButton_2reportIssue</tabstop>
+  <tabstop>pushButton_2changeLogin</tabstop>
+  <tabstop>pushButton_2booktest</tabstop>
+  <tabstop>pushButton_2bookvacc</tabstop>
+  <tabstop>pushButton_3reportIssue</tabstop>
+  <tabstop>pushButton_3changeLogin</tabstop>
+  <tabstop>textBrowser_3Logo</tabstop>
+  <tabstop>pushButton_3Logout</tabstop>
+  <tabstop>textBrowser_3subhead</tabstop>
+  <tabstop>textBrowser_3title</tabstop>
+  <tabstop>listWidget_records</tabstop>
+  <tabstop>pushButton_LoadTable</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

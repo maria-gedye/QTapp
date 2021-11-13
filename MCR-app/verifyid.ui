@@ -45,7 +45,7 @@
     <string>LICENSE</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_C1">
+  <widget class="QLineEdit" name="lineEdit_2C1">
    <property name="geometry">
     <rect>
      <x>670</x>
@@ -101,7 +101,7 @@ margin: 10, 10, 10, 10;</string>
     <string>SUBMIT</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_CC2">
+  <widget class="QLineEdit" name="lineEdit_4CC2">
    <property name="geometry">
     <rect>
      <x>670</x>
@@ -124,7 +124,7 @@ margin: 10, 10, 10, 10;</string>
     <string>Enter expiry date</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_L1">
+  <widget class="QLineEdit" name="lineEdit_1L1">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -134,7 +134,7 @@ margin: 10, 10, 10, 10;</string>
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_CC1">
+  <widget class="QLineEdit" name="lineEdit_4CC1">
    <property name="geometry">
     <rect>
      <x>670</x>
@@ -144,7 +144,7 @@ margin: 10, 10, 10, 10;</string>
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_P1">
+  <widget class="QLineEdit" name="lineEdit_3P1">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -209,7 +209,7 @@ margin: 10, 10, 10, 10;</string>
     <string>Enter version number</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_C2">
+  <widget class="QLineEdit" name="lineEdit_2C2">
    <property name="geometry">
     <rect>
      <x>670</x>
@@ -235,7 +235,7 @@ margin: 10, 10, 10, 10;</string>
     <string>BIRTH CERTIFICATE</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_P2">
+  <widget class="QLineEdit" name="lineEdit_3P2">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -324,7 +324,7 @@ font-size:45pt; font-weight:600;</string>
 we need to be 100% sure that You are You.</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_L2">
+  <widget class="QLineEdit" name="lineEdit_1L2">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -335,6 +335,21 @@ we need to be 100% sure that You are You.</string>
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit_1L1</tabstop>
+  <tabstop>lineEdit_1L2</tabstop>
+  <tabstop>lineEdit_2C1</tabstop>
+  <tabstop>lineEdit_2C2</tabstop>
+  <tabstop>lineEdit_3P1</tabstop>
+  <tabstop>lineEdit_3P2</tabstop>
+  <tabstop>lineEdit_4CC1</tabstop>
+  <tabstop>lineEdit_4CC2</tabstop>
+  <tabstop>pushButton_submit</tabstop>
+  <tabstop>radioButton_cc</tabstop>
+  <tabstop>radioButton_cer</tabstop>
+  <tabstop>radioButton_ppt</tabstop>
+  <tabstop>radioButton_license</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

@@ -1,6 +1,6 @@
-John,Doe,Pfizer BioNTech COVID-19,Dose 1,25 August 2021
-John,Doe,Pfizer BioNTech COVID-19,Dose 2,30 September 2021
 Jane,Doe,Pfizer BioNTech COVID-19,Dose 1,9 November 2021
-Pia,Desai,Pfizer BioNTech COVID-19,Dose 1,10 August 2021
 Pia,Desai,Pfizer BioNTech COVID-19,Dose 2,4 October 2021
+John,Doe,Pfizer BioNTech COVID-19,Dose 2,30 September 2021
+John,Doe,Pfizer BioNTech COVID-19,Dose 1,25 August 2021
+Pia,Desai,Pfizer BioNTech COVID-19,Dose 1,10 August 2021
 Farhan,Khan,Pfizer BioNTech COVID-19,Dose 1,7 July 2021
