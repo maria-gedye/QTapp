@@ -17,6 +17,7 @@ SOURCES += \
     admin_menu.cpp \
     main.cpp \
     mainwindow.cpp \
+    report_issues.cpp \
     signupdialog.cpp \
     user.cpp \
     userqr.cpp \
@@ -30,6 +31,7 @@ HEADERS += \
     admin_login.h \
     admin_menu.h \
     mainwindow.h \
+    report_issues.h \
     signupdialog.h \
     user.h \
     userqr.h \
@@ -42,6 +44,7 @@ FORMS += \
     admin_login.ui \
     admin_menu.ui \
     mainwindow.ui \
+    report_issues.ui \
     signupdialog.ui \
     userqr.ui \
     verifyid.ui

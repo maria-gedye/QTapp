@@ -139,3 +139,9 @@ void MainWindow::on_pushButton_LoadTable_clicked()
     qInfo() << "Hello";
 }
 
+
+void MainWindow::on_pushButton_3reportIssue_clicked()
+{
+
+}
+
