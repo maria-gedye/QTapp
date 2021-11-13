@@ -182,9 +182,15 @@ private slots:
 
     void on_pushButton_LoadTable_clicked();
 
+<<<<<<< HEAD
 
     void on_pushButton_1back_clicked();
 
+||||||| 7e5570f
+=======
+    void on_pushButton_3reportIssue_clicked();
+
+>>>>>>> 200c97cf862849e81543e3fdbd4755a2a0a281fa
 private:
     Ui::MainWindow *ui;
     SignupDialog *signup_ui;

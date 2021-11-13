@@ -154,3 +154,9 @@ void MainWindow::on_pushButton_1back_clicked()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
+
+void MainWindow::on_pushButton_3reportIssue_clicked()
+{
+
+}
+
