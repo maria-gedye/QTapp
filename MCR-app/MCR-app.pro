@@ -55,9 +55,9 @@ DISTFILES += \
     Images/icon.png \
     Images/logo.png \
     Images/whanau.2d006e8f.png \
-    txt/IDs.txt \
     txt/Issues.txt \
-    txt/Users.txt
+    txt/Tests.txt \
+    txt/Vaccines.txt
 
 RESOURCES += \
     Resources.qrc

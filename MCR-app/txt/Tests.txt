@@ -6,3 +6,4 @@ Jane,Doe,COVID-19 Test,Negative,1 July 2021
 Jane,Doe,COVID-19 Test,Negative,3 September 2021
 Pia,Desai,COVID-19 Test,Negative,22 February 2021
 Pia,Desai,COVID-19 Test,Negative,10 November 2021
+Farhan,Khan,COVID-19 Test,Negative,13 November 2021

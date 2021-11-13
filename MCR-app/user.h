@@ -46,11 +46,11 @@ public:
         QStringList names;
         in.seek(p);
         line = in.readLine();
-        qInfo() << "line read:  " << line;
+//        qInfo() << "line read:  " << line;
         names = line.split(",");
         usr->firstName = names[0];
         usr->surname = names[1];
-        qInfo() << usr->firstName << " " << usr->surname;
+        qInfo() << "Names split: " << usr->firstName << " " << usr->surname;
 
     }
 

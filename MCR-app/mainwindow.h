@@ -5,6 +5,8 @@
 
 #include <QMainWindow>
 #include <QWidget>
+#include <QListWidget>
+#include <QString>
 #include "signupdialog.h"
 #include "verifyid.h"
 #include "user.h"
@@ -32,6 +34,132 @@ public:
             QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
     }
 
+    void readTestsRecords() {
+        QFile t_file(":/new/prefix1/txt/Tests.txt");
+        if (!t_file.open(QFile::ReadOnly|QFile::Text)) {
+            qInfo() << "Tests file is not open";
+        }
+
+        QTextStream in(&t_file);
+        QString search_name, line, singleRec;
+        QStringList allRec, temp, testList;
+        int i = 0;
+
+        search_name = curUsr->getName();
+            qInfo() << "Searching name:  " << search_name;
+
+        while(!in.atEnd()) {
+            line = in.readLine();
+            if (line.contains(search_name)) {
+                allRec.append(line);    // check file and add matching lines to allRec
+                i++;
+            }
+        }
+        t_file.flush();
+        t_file.close();
+
+           for (int j = 0; j < allRec.size(); j++) {
+               temp.append(allRec[j].split(","));   // copy to temp, split lines into strings sep by ','
+           }
+
+           // formula: remove name, remove name, skip, skip, skip
+           for (int i = 0; i < allRec.size(); i++) {
+               int indx = temp.indexOf(search_name); // remove name strings in temp
+                temp.removeAt(indx);
+                 temp.removeAt(indx);
+             }
+
+        allRec.clear(); // empty allRec
+        int k = 0;
+           // formula: append every 3 strings in testList, do a join() and store str in allRec
+        for (int i = 0; i < temp.size()/ 3; i++) {
+
+            for (int j = 0; j < 3; j++) {
+                testList.append(temp[k]);
+                k++;
+            }
+            singleRec = testList.join(" | ");
+            testList.clear();
+            allRec.append(singleRec);
+             qInfo() << "allRec test:  " << allRec;
+        }
+
+        testList = allRec;
+
+        // add strings into list widget
+
+        for (int i = 0; i < testList.size(); i++) {
+        QListWidgetItem *testItem = new QListWidgetItem(QIcon(":/new/prefix1/Images/test.png"), testList[i]);
+        ui->listWidget_records->addItem(testItem);
+        ui->listWidget_records->setIconSize(QSize(80,80));
+        }
+
+    } // end of readTestRecords function
+
+    void readVaccineRecords() {
+
+            QFile v_file(":/new/prefix1/txt/Vaccines.txt");
+            if (!v_file.open(QFile::ReadOnly|QFile::Text)) {
+                qInfo() << "Vaccines file is not open";
+            }
+
+            QTextStream in(&v_file);
+            QString search_name, line, singleRec;
+            QStringList allRec, temp, vacList;
+            int i = 0;
+
+            search_name = curUsr->getName();
+                qInfo() << "Searching name:  " << search_name;
+
+            while(!in.atEnd()) {
+                line = in.readLine();
+                if (line.contains(search_name)) {
+                    allRec.append(line);    // check file and add matching lines to allRec
+                    i++;
+                }
+            }
+            v_file.flush();
+            v_file.close();
+
+               for (int j = 0; j < allRec.size(); j++) {
+                   temp.append(allRec[j].split(","));   // copy to temp, split lines into strings sep by ','
+               }
+
+               // formula: remove name, remove name, skip, skip, skip
+               for (int i = 0; i < allRec.size(); i++) {
+                   int indx = temp.indexOf(search_name); // remove name strings in temp
+                    temp.removeAt(indx);
+                     temp.removeAt(indx);
+                 }
+
+            allRec.clear(); // empty allRec
+            int k = 0;
+               // formula: append every 3 strings in testList, do a join() and store str in allRec
+            for (int i = 0; i < temp.size()/ 3; i++) {
+
+                for (int j = 0; j < 3; j++) {
+                    vacList.append(temp[k]);
+                    k++;
+                }
+                singleRec = vacList.join(" | ");
+                vacList.clear();
+                allRec.append(singleRec);
+                 qInfo() << "allRec vac:  " << allRec;
+            }
+
+            vacList = allRec;
+
+            // add strings into list widget
+
+            for (int i = 0; i < vacList.size(); i++) {
+            QListWidgetItem *vacItem = new QListWidgetItem(QIcon(":/new/prefix1/Images/vaccine.png"), vacList[i]);
+            ui->listWidget_records->addItem(vacItem);
+            ui->listWidget_records->setIconSize(QSize(80,80));
+            }
+
+
+    } // end of readVaccineRecord function
+
 
 private slots:
     void on_pushButton_start_3_clicked();
@@ -53,6 +181,9 @@ private slots:
     void on_pushButton_testadminqr_clicked();
 
     void on_pushButton_LoadTable_clicked();
+
+
+    void on_pushButton_1back_clicked();
 
 private:
     Ui::MainWindow *ui;

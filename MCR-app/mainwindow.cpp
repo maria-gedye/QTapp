@@ -136,6 +136,21 @@ void MainWindow::on_pushButton_testadminqr_clicked()
 
 void MainWindow::on_pushButton_LoadTable_clicked()
 {
-    qInfo() << "Hello";
+
+    // read tests file for matching records
+    readTestsRecords();
+
+    // now for checking vaccine records...
+    readVaccineRecords();
+
+    ui->pushButton_LoadTable->setEnabled(false);
+
+} // end of loadRecords function
+
+
+
+void MainWindow::on_pushButton_1back_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
 }
 

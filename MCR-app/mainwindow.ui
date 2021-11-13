@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page_Home">
      <widget class="QWidget" name="horizontalLayoutWidget_2">
@@ -371,6 +371,22 @@ background-color: rgb(255, 255, 255);</string>
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; color:#042d6d;&quot;&gt;User Login&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_1back">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>310</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(78, 151, 217)</string>
+      </property>
+      <property name="text">
+       <string>Go Back</string>
       </property>
      </widget>
     </widget>
@@ -726,7 +742,7 @@ border-radius: 20px;</string>
          <x>20</x>
          <y>10</y>
          <width>181</width>
-         <height>91</height>
+         <height>81</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -881,8 +897,8 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>20</x>
         <y>180</y>
-        <width>411</width>
-        <height>261</height>
+        <width>501</width>
+        <height>291</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -898,11 +914,14 @@ border-radius: 20px;</string>
       <widget class="QListWidget" name="listWidget_records">
        <property name="geometry">
         <rect>
-         <x>30</x>
-         <y>30</y>
-         <width>341</width>
-         <height>192</height>
+         <x>0</x>
+         <y>11</y>
+         <width>501</width>
+         <height>271</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:16pt; font-weight:200; color:#042d6d;</string>
        </property>
       </widget>
      </widget>
