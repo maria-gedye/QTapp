@@ -65,7 +65,7 @@ padding: 10,10,10,10;
 margin: 10, 10, 10, 10;</string>
       </property>
       <property name="text">
-       <string>User information</string>
+       <string>User Information</string>
       </property>
      </widget>
     </item>

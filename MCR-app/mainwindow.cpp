@@ -317,6 +317,6 @@ void MainWindow::on_pushButton_NEXT_clicked()
 
 void MainWindow::on_pushButton_EXIT_clicked()
 {
-
+    this->close();
 }
 

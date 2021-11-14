@@ -64,7 +64,7 @@
         <x>20</x>
         <y>10</y>
         <width>771</width>
-        <height>61</height>
+        <height>71</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_header">
@@ -465,7 +465,7 @@ p, li { white-space: pre-wrap; }
         <x>10</x>
         <y>10</y>
         <width>781</width>
-        <height>61</height>
+        <height>71</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_2header">
@@ -913,7 +913,7 @@ padding: 10,10,10,10;</string>
         <x>10</x>
         <y>10</y>
         <width>781</width>
-        <height>70</height>
+        <height>81</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_3header">
@@ -1272,7 +1272,7 @@ color:#042d6d;</string>
      <x>0</x>
      <y>0</y>
      <width>825</width>
-     <height>21</height>
+     <height>24</height>
     </rect>
    </property>
   </widget>

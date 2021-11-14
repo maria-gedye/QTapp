@@ -28,7 +28,7 @@ font-weight:500;
 color:#042d6d</string>
    </property>
    <property name="text">
-    <string>Manage User</string>
+    <string>User Information</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -62,10 +62,10 @@ color:#042d6d</string>
   <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>100</y>
+     <x>100</x>
+     <y>90</y>
      <width>84</width>
-     <height>66</height>
+     <height>120</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -75,6 +75,13 @@ color:#042d6d</string>
        <font>
         <pointsize>10</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(153, 222, 255);
+color: rgb(255, 255, 255);
+border: none;
+padding: 10,10,10,10;
+margin: 10, 10, 10, 10;</string>
       </property>
       <property name="text">
        <string>TEST</string>
@@ -87,6 +94,13 @@ color:#042d6d</string>
        <font>
         <pointsize>10</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(153, 222, 255);
+color: rgb(255, 255, 255);
+border: none;
+padding: 10,10,10,10;
+margin: 10, 10, 10, 10;</string>
       </property>
       <property name="text">
        <string>RECORD</string>
