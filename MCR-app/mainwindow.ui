@@ -20,14 +20,14 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>-1</y>
+      <x>20</x>
+      <y>0</y>
       <width>811</width>
       <height>491</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="page_Home">
      <widget class="QWidget" name="horizontalLayoutWidget_2">
@@ -952,6 +952,94 @@ margin: 10, 10, 10, 10;</string>
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="page_ageCheck">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>180</y>
+        <width>481</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size:20pt; font-weight:500;</string>
+      </property>
+      <property name="text">
+       <string>Click NEXT only if you are at least 16 years of age.</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_NEXT">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>310</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(248, 146, 28);
+color: rgb(255, 255, 255);
+border: none;
+padding: 10,10,10,10;
+margin: 10, 10, 10, 10;</string>
+      </property>
+      <property name="text">
+       <string>NEXT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_EXIT">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>310</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(4, 45, 109);
+color: rgb(255, 255, 255);
+border: none;
+padding: 10,10,10,10;
+margin: 10, 10, 10, 10;</string>
+      </property>
+      <property name="text">
+       <string>EXIT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>20</y>
+        <width>501</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size:38pt; 
+font-weight:500;
+color:#042d6d</string>
+      </property>
+      <property name="text">
+       <string>PLEASE VERIFY YOUR AGE</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -960,7 +1048,7 @@ margin: 10, 10, 10, 10;</string>
      <x>0</x>
      <y>0</y>
      <width>825</width>
-     <height>21</height>
+     <height>24</height>
     </rect>
    </property>
   </widget>

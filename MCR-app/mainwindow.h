@@ -64,6 +64,10 @@ private slots:
 
     void on_pushButton_2reportIssue_clicked();
 
+    void on_pushButton_NEXT_clicked();
+
+    void on_pushButton_EXIT_clicked();
+
 private:
     Ui::MainWindow *ui;
     SignupDialog *signup_ui;

@@ -164,11 +164,8 @@ void MainWindow::readVaccineRecords() {
 void MainWindow::on_pushButton_start_3_clicked()
 {
 
-    //open signup dialog
-    signup_ui = new SignupDialog(this);
-    signup_ui->show();
 
-    ui->stackedWidget->setCurrentIndex(1);  // go to login
+    ui->stackedWidget->setCurrentIndex(4);  // go to age check screen
 }
 
 
@@ -305,5 +302,21 @@ void MainWindow::on_pushButton_2reportIssue_clicked()
 {
     report_issues_ui = new report_issues(this);
     report_issues_ui->show();
+}
+
+
+void MainWindow::on_pushButton_NEXT_clicked()
+{
+    //open signup dialog
+    signup_ui = new SignupDialog(this);
+    signup_ui->show();
+
+    ui->stackedWidget->setCurrentIndex(1);  // go to login
+}
+
+
+void MainWindow::on_pushButton_EXIT_clicked()
+{
+
 }
 
