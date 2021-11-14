@@ -50,7 +50,7 @@ Administrator Main Menu</string>
      <x>70</x>
      <y>240</y>
      <width>611</width>
-     <height>296</height>
+     <height>303</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -80,7 +80,7 @@ padding: 10,10,10,10;
 margin: 10, 10, 10, 10;</string>
       </property>
       <property name="text">
-       <string>Manage Record / Test</string>
+       <string>Manage Record / Test / QR Code</string>
       </property>
      </widget>
     </item>

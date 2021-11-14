@@ -15,6 +15,13 @@ public:
     explicit ad_manage_record_test(QWidget *parent = nullptr);
     ~ad_manage_record_test();
 
+private slots:
+    void on_pushButton_RT_goback_clicked();
+
+    void on_pushButton_RT_test_clicked();
+
+    void on_pushButton_RT_record_clicked();
+
 private:
     Ui::ad_manage_record_test *ui;
 };
