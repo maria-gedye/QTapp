@@ -21,6 +21,11 @@ public:
 
     QString timeStamp();
 
+    int createID() {
+        count++;
+        return count;
+    }
+
 private slots:
     void on_pushButton_RIsend_clicked();
 

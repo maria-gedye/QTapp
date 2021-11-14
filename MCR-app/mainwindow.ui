@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="page_Home">
      <widget class="QLabel" name="label_3_mainimage">
@@ -184,32 +184,6 @@ margin: 10, 10, 10, 10;</string>
         </widget>
        </item>
       </layout>
-     </widget>
-     <widget class="QPushButton" name="pushButton_testuserqr">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>80</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>testuserqr</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_testadminqr">
-      <property name="geometry">
-       <rect>
-        <x>460</x>
-        <y>80</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>testadminqr</string>
-      </property>
      </widget>
      <widget class="QWidget" name="verticalLayoutWidget">
       <property name="geometry">
@@ -939,7 +913,7 @@ padding: 10,10,10,10;</string>
         <x>10</x>
         <y>10</y>
         <width>781</width>
-        <height>61</height>
+        <height>70</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_3header">
@@ -991,6 +965,20 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="text">
           <string>display user's Name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_testuserqr">
+         <property name="text">
+          <string>testuserqr</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_testadminqr">
+         <property name="text">
+          <string>testadminqr</string>
          </property>
         </widget>
        </item>
@@ -1293,8 +1281,6 @@ color:#042d6d;</string>
  <tabstops>
   <tabstop>pushButton_loginUsr</tabstop>
   <tabstop>pushButton_adminLogin</tabstop>
-  <tabstop>pushButton_testuserqr</tabstop>
-  <tabstop>pushButton_testadminqr</tabstop>
   <tabstop>lineEdit_loginEmail</tabstop>
   <tabstop>lineEdit_loginPassword</tabstop>
   <tabstop>pushButton_loginsubmit</tabstop>

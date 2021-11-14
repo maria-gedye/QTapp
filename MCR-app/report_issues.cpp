@@ -27,6 +27,7 @@ QString report_issues::timeStamp() {
 
 void report_issues::on_pushButton_RIsend_clicked()
 {
+    int issueID = createID() + 100;
     QString newpath = QDir::currentPath();
     QFile file(newpath +"/Issues.txt");
 
@@ -36,8 +37,9 @@ void report_issues::on_pushButton_RIsend_clicked()
 
     QTextStream out(&file);
     QString data = ui->plainTextEdit_UreportIssue->toPlainText();
-    out << timeStamp() << "\n";
-    out << data << "\n\n";
+    out << issueID << "\n";
+    out << data << "\n";
+    out << timeStamp() << "\n\n";
     file.flush();
     file.close();
 
