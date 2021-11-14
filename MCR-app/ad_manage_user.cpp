@@ -1,5 +1,6 @@
 #include "ad_manage_user.h"
 #include "ui_ad_manage_user.h"
+#include "admin_menu.h"
 #include <QFile>
 #include <QMessageBox>
 
@@ -44,5 +45,14 @@ void ad_manage_user::on_pushButton_record_clicked()
     ui->textBrowser_display->setPlainText(text);
 
     recordfile.close();
+}
+
+
+void ad_manage_user::on_pushButton_goback_clicked()
+{
+    admin_menu am;
+    am.setModal(true);
+    am.exec();
+
 }
 

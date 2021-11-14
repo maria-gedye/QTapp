@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButton_record_clicked();
 
+    void on_pushButton_goback_clicked();
+
 private:
     Ui::ad_manage_user *ui;
 };
