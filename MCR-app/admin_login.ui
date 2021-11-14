@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(240, 248, 253);</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
@@ -86,6 +89,10 @@ color:#042d6d</string>
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(252, 252, 252);
+color: rgb(16, 16, 16);</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_pwd">
    <property name="geometry">
@@ -95,6 +102,10 @@ color:#042d6d</string>
      <width>251</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(252, 252, 252);
+color: rgb(16, 16, 16);</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_adminLogin">
@@ -114,7 +125,7 @@ color:#042d6d</string>
    </property>
    <property name="font">
     <font>
-     <pointsize>10</pointsize>
+     <pointsize>12</pointsize>
     </font>
    </property>
    <property name="styleSheet">

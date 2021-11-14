@@ -7,16 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>789</width>
-    <height>751</height>
+    <height>605</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(240, 248, 253);</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>40</x>
      <y>80</y>
      <width>701</width>
      <height>171</height>
@@ -44,7 +47,7 @@ Administrator Main Menu</string>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>120</x>
+     <x>70</x>
      <y>240</y>
      <width>611</width>
      <height>296</height>

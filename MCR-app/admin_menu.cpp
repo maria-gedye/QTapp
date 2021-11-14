@@ -39,3 +39,9 @@ void admin_menu::on_pushButton_issues_clicked()
     ad_issues.exec();
 }
 
+
+void admin_menu::on_pushButton_logout_clicked()
+{
+    this->close();
+}
+

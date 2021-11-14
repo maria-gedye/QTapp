@@ -6,7 +6,11 @@ report_issues::report_issues(QWidget *parent) :
     ui(new Ui::report_issues)
 {
     ui->setupUi(this);
+
 }
+
+
+ int report_issues::count = 0;
 
 report_issues::~report_issues()
 {

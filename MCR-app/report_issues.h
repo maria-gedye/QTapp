@@ -13,9 +13,10 @@ class report_issues;
 class report_issues : public QDialog
 {
     Q_OBJECT
+    static int count;
 
 public:
-    explicit report_issues(QWidget *parent = nullptr);
+    report_issues(QWidget *parent = nullptr);
     ~report_issues();
 
     QString timeStamp();

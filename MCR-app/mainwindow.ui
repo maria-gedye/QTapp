@@ -20,88 +20,21 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>0</x>
       <y>0</y>
-      <width>811</width>
+      <width>831</width>
       <height>491</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page_Home">
-     <widget class="QWidget" name="horizontalLayoutWidget_2">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>370</y>
-        <width>335</width>
-        <height>80</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
-       <item>
-        <widget class="QLabel" name="label_callToAction">
-         <property name="font">
-          <font>
-           <pointsize>9</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(4, 45, 109);</string>
-         </property>
-         <property name="text">
-          <string>Create an account to see your records</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_5">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_start_3">
-         <property name="minimumSize">
-          <size>
-           <width>80</width>
-           <height>20</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(4, 45, 109);
-color: rgb(255, 255, 255);
-border: none;
-padding: 10,10,10,10;
-margin: 10, 10, 10, 10;</string>
-         </property>
-         <property name="text">
-          <string>Start</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
      <widget class="QLabel" name="label_3_mainimage">
       <property name="geometry">
        <rect>
         <x>400</x>
-        <y>140</y>
+        <y>120</y>
         <width>391</width>
         <height>311</height>
        </rect>
@@ -128,15 +61,21 @@ margin: 10, 10, 10, 10;</string>
      <widget class="QWidget" name="horizontalLayoutWidget">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>20</x>
         <y>10</y>
-        <width>781</width>
-        <height>89</height>
+        <width>771</width>
+        <height>61</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_header">
        <item>
         <widget class="QTextBrowser" name="textBrowser_Logo">
+         <property name="minimumSize">
+          <size>
+           <width>256</width>
+           <height>59</height>
+          </size>
+         </property>
          <property name="font">
           <font>
            <pointsize>18</pointsize>
@@ -145,15 +84,15 @@ margin: 10, 10, 10, 10;</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">font-weight:400;</string>
+          <string notr="true">border:none;font-weight:400;</string>
          </property>
          <property name="html">
           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'.AppleSystemUIFont'; font-size:13pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-weight:600; color:#042d6d;&quot;&gt;   My Covid Record&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:13pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#042d6d;&quot;&gt;   My Covid Record&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -180,7 +119,7 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <pointsize>12</pointsize>
            <weight>50</weight>
            <bold>false</bold>
           </font>
@@ -204,7 +143,7 @@ style: bold;</string>
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <pointsize>12</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -229,7 +168,7 @@ margin: 10, 10, 10, 10;</string>
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <pointsize>12</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -246,47 +185,11 @@ margin: 10, 10, 10, 10;</string>
        </item>
       </layout>
      </widget>
-     <widget class="QTextBrowser" name="textBrowser_mainTitle">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>120</y>
-        <width>300</width>
-        <height>261</height>
-       </rect>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>300</width>
-        <height>261</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>36</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">style: bold;</string>
-      </property>
-      <property name="lineWidth">
-       <number>0</number>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:36pt; font-weight:600; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; color:#042d6d;&quot;&gt;Get your Covid-19&lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; color:#4e97d9;&quot;&gt;vaccine records&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
      <widget class="QPushButton" name="pushButton_testuserqr">
       <property name="geometry">
        <rect>
-        <x>290</x>
-        <y>130</y>
+        <x>350</x>
+        <y>80</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -298,8 +201,8 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_testadminqr">
       <property name="geometry">
        <rect>
-        <x>290</x>
-        <y>160</y>
+        <x>460</x>
+        <y>80</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -307,6 +210,110 @@ p, li { white-space: pre-wrap; }
       <property name="text">
        <string>testadminqr</string>
       </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>110</y>
+        <width>341</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QTextBrowser" name="textBrowser_mainTitle">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>36</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border:none;</string>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:36pt; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:48pt; color:#042d6d;&quot;&gt;Get your &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:48pt; color:#042d6d;&quot;&gt;Covid-19&lt;/span&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:48pt; color:#4e97d9;&quot;&gt;vaccine &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:48pt; color:#4e97d9;&quot;&gt;records&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_callToAction">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(4, 45, 109);</string>
+           </property>
+           <property name="text">
+            <string>Create an account to see your records</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_start_3">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(4, 45, 109);
+color: rgb(255, 255, 255);
+border: none;
+padding: 10,10,10,10;
+margin: 10, 10, 10, 10;</string>
+           </property>
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
      </widget>
     </widget>
     <widget class="QWidget" name="page_LogIn">
@@ -327,7 +334,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <pointsize>12</pointsize>
+        <pointsize>14</pointsize>
        </font>
       </property>
       <property name="styleSheet">
@@ -355,7 +362,7 @@ margin: 10, 10, 10, 10;</string>
         <widget class="QLabel" name="label_loginEmail">
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <pointsize>12</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -384,7 +391,7 @@ background-color: rgb(255, 255, 255);</string>
         <widget class="QLabel" name="label_loginPassword">
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <pointsize>12</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -451,8 +458,8 @@ background-color: rgb(255, 255, 255);</string>
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:22pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-weight:600; color:#042d6d;&quot;&gt;User Login&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:22pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#042d6d;&quot;&gt;User Login&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_1back">
@@ -466,7 +473,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <pointsize>10</pointsize>
+        <pointsize>12</pointsize>
        </font>
       </property>
       <property name="styleSheet">
@@ -484,19 +491,28 @@ p, li { white-space: pre-wrap; }
         <x>10</x>
         <y>10</y>
         <width>781</width>
-        <height>89</height>
+        <height>61</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_2header">
        <item>
         <widget class="QTextBrowser" name="textBrowser_2Logo">
+         <property name="minimumSize">
+          <size>
+           <width>265</width>
+           <height>59</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border:nonel</string>
+         </property>
          <property name="html">
           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'.AppleSystemUIFont'; font-size:13pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:18pt; font-weight:600; color:#042d6d;&quot;&gt;   My Covid Record&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#042d6d;&quot;&gt;   My Covid Record&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -523,7 +539,7 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <pointsize>12</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -546,7 +562,7 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <pointsize>12</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -567,9 +583,9 @@ margin: 10, 10, 10, 10;</string>
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>140</y>
+        <y>120</y>
         <width>531</width>
-        <height>311</height>
+        <height>301</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -588,61 +604,10 @@ border-radius: 20px;</string>
          <x>10</x>
          <y>10</y>
          <width>511</width>
-         <height>271</height>
+         <height>251</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
-        <item row="4" column="1">
-         <widget class="QPushButton" name="pushButton_verifyID">
-          <property name="minimumSize">
-           <size>
-            <width>175</width>
-            <height>60</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(4, 45, 109);
-color: rgb(255, 255, 255);
-border: none;
-padding: 10,10,10,10;
-margin: 10, 10, 10, 10;</string>
-          </property>
-          <property name="text">
-           <string>Complete My Account</string>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="2">
-         <spacer name="horizontalSpacer_11">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="4" column="0">
-         <spacer name="horizontalSpacer_12">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
         <item row="0" column="1">
          <widget class="QLabel" name="label_2icon">
           <property name="sizePolicy">
@@ -686,12 +651,50 @@ margin: 10, 10, 10, 10;</string>
           </property>
          </widget>
         </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="pushButton_verifyID">
+          <property name="minimumSize">
+           <size>
+            <width>175</width>
+            <height>60</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(4, 45, 109);
+color: rgb(255, 255, 255);
+border: none;
+padding: 10,10,10,10;
+margin: 10, 10, 10, 10;</string>
+          </property>
+          <property name="text">
+           <string>Complete My Account</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <spacer name="horizontalSpacer_12">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
         <item row="2" column="0" colspan="3">
          <widget class="QTextBrowser" name="textBrowser_2info">
           <property name="minimumSize">
            <size>
             <width>509</width>
-            <height>184</height>
+            <height>120</height>
            </size>
           </property>
           <property name="font">
@@ -706,12 +709,25 @@ margin: 10, 10, 10, 10;</string>
            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:20pt; font-weight:600; color:#042d6d;&quot;&gt;Complete your MCR account&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'.AppleSystemUIFont'; font-size:20pt; font-weight:600; color:#042d6d;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:16pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; color:#042d6d;&quot;&gt;Complete your MCR account&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:20pt; font-weight:600; color:#042d6d;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;docs-internal-guid-ca190dc1-7fff-7777-0632-bec823df1c19&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Arial'; color:#042d6d; background-color:transparent;&quot;&gt;T&lt;/span&gt;&lt;span style=&quot; font-family:'Arial'; color:#042d6d; background-color:transparent;&quot;&gt;o protect the privacy of your information, we need to be sure of who you are. Please finish setting up your MCR Account to view your vaccine and test records.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
+        </item>
+        <item row="4" column="2">
+         <spacer name="horizontalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
         </item>
        </layout>
       </widget>
@@ -720,7 +736,7 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>570</x>
-        <y>170</y>
+        <y>160</y>
         <width>211</width>
         <height>191</height>
        </rect>
@@ -820,7 +836,7 @@ padding: 10,10,10,10;</string>
       <property name="geometry">
        <rect>
         <x>590</x>
-        <y>130</y>
+        <y>120</y>
         <width>191</width>
         <height>41</height>
        </rect>
@@ -836,12 +852,15 @@ padding: 10,10,10,10;</string>
         <pointsize>18</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-weight:600; color:#042d6d;&quot;&gt;I want to...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#042d6d;&quot;&gt;I want to...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </widget>
@@ -850,7 +869,7 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>570</x>
-        <y>170</y>
+        <y>160</y>
         <width>211</width>
         <height>191</height>
        </rect>
@@ -920,19 +939,22 @@ padding: 10,10,10,10;</string>
         <x>10</x>
         <y>10</y>
         <width>781</width>
-        <height>89</height>
+        <height>61</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_3header">
        <item>
         <widget class="QTextBrowser" name="textBrowser_3Logo">
+         <property name="styleSheet">
+          <string notr="true">border:none;</string>
+         </property>
          <property name="html">
           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'.AppleSystemUIFont'; font-size:13pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:18pt; font-weight:600; color:#042d6d;&quot;&gt;   My Covid Record&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#042d6d;&quot;&gt;   My Covid Record&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -959,7 +981,7 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <pointsize>12</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -982,7 +1004,7 @@ p, li { white-space: pre-wrap; }
          </property>
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
+           <pointsize>12</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -1003,7 +1025,7 @@ margin: 10, 10, 10, 10;</string>
       <property name="geometry">
        <rect>
         <x>590</x>
-        <y>130</y>
+        <y>120</y>
         <width>191</width>
         <height>41</height>
        </rect>
@@ -1019,19 +1041,22 @@ margin: 10, 10, 10, 10;</string>
         <pointsize>18</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-weight:600; color:#042d6d;&quot;&gt;I want to...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#042d6d;&quot;&gt;I want to...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QTextBrowser" name="textBrowser_3title">
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>120</y>
+        <y>102</y>
         <width>231</width>
         <height>51</height>
        </rect>
@@ -1047,19 +1072,22 @@ p, li { white-space: pre-wrap; }
         <pointsize>22</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;</string>
+      </property>
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:22pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-weight:600; color:#042d6d;&quot;&gt;Your records&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:22pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; color:#042d6d;&quot;&gt;Your records&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QFrame" name="frame_7">
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>180</y>
+        <y>162</y>
         <width>521</width>
         <height>291</height>
        </rect>
@@ -1099,7 +1127,7 @@ border-radius: 20px;</string>
       <property name="geometry">
        <rect>
         <x>250</x>
-        <y>110</y>
+        <y>92</y>
         <width>150</width>
         <height>61</height>
        </rect>
@@ -1112,7 +1140,7 @@ border-radius: 20px;</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>10</pointsize>
+        <pointsize>12</pointsize>
        </font>
       </property>
       <property name="styleSheet">
@@ -1151,7 +1179,8 @@ margin: 10, 10, 10, 10;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">font-size:16pt; font-weight:500;</string>
+       <string notr="true">font-size:16pt; font-weight:500;
+color: rgb(4, 45, 109);</string>
       </property>
       <property name="text">
        <string>Click NEXT only if you are at least 16 years of age.</string>
@@ -1262,7 +1291,6 @@ color:#042d6d;</string>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <tabstops>
-  <tabstop>pushButton_start_3</tabstop>
   <tabstop>pushButton_loginUsr</tabstop>
   <tabstop>pushButton_adminLogin</tabstop>
   <tabstop>pushButton_testuserqr</tabstop>
@@ -1290,6 +1318,10 @@ color:#042d6d;</string>
   <tabstop>textBrowser_3title</tabstop>
   <tabstop>listWidget_records</tabstop>
   <tabstop>pushButton_LoadTable</tabstop>
+  <tabstop>textBrowser_3subhead_2</tabstop>
+  <tabstop>pushButton_NEXT</tabstop>
+  <tabstop>pushButton_EXIT</tabstop>
+  <tabstop>pushButton_start_3</tabstop>
  </tabstops>
  <resources/>
  <connections/>

@@ -22,6 +22,8 @@ private slots:
 
     void on_pushButton_issues_clicked();
 
+    void on_pushButton_logout_clicked();
+
 private:
     Ui::admin_menu *ui;
 };

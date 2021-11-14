@@ -27,6 +27,7 @@ void Admin_login::on_pushButton_adminLogin_clicked()
         admin_menu ad_menu;
         ad_menu.setModal(true);
         ad_menu.exec();
+        this->close();
     }
     else
     {
