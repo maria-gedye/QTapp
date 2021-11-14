@@ -22,9 +22,15 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="minimumSize">
+    <size>
+     <width>141</width>
+     <height>20</height>
+    </size>
+   </property>
    <property name="styleSheet">
-    <string notr="true">font-size:20pt; font-weight:500;
-color: rgb(4, 45, 109);</string>
+    <string notr="true">font-size:16pt; font-weight:500;
+color:#4e97d9;</string>
    </property>
    <property name="text">
     <string>PASSPORT</string>
@@ -39,9 +45,22 @@ color: rgb(4, 45, 109);</string>
      <height>21</height>
     </rect>
    </property>
+   <property name="minimumSize">
+    <size>
+     <width>161</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>62</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">font-size:20pt; font-weight:500;
-color: rgb(4, 45, 109);</string>
+    <string notr="true">font-size:16pt; font-weight:500;
+color:#4e97d9;</string>
    </property>
    <property name="text">
     <string>LICENSE</string>
@@ -70,6 +89,11 @@ background-color: rgb(255, 255, 255);</string>
      <height>16</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(4, 45, 109);</string>
    </property>
@@ -86,6 +110,11 @@ background-color: rgb(255, 255, 255);</string>
      <height>16</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(4, 45, 109);</string>
    </property>
@@ -101,6 +130,11 @@ background-color: rgb(255, 255, 255);</string>
      <width>121</width>
      <height>51</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(248, 146, 28);
@@ -135,6 +169,11 @@ background-color: rgb(255, 255, 255);</string>
      <width>151</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(4, 45, 109);</string>
@@ -194,6 +233,11 @@ background-color: rgb(255, 255, 255);</string>
      <height>16</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(4, 45, 109);</string>
    </property>
@@ -209,6 +253,11 @@ background-color: rgb(255, 255, 255);</string>
      <width>151</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(4, 45, 109);</string>
@@ -226,9 +275,15 @@ background-color: rgb(255, 255, 255);</string>
      <height>20</height>
     </rect>
    </property>
+   <property name="minimumSize">
+    <size>
+     <width>301</width>
+     <height>20</height>
+    </size>
+   </property>
    <property name="styleSheet">
-    <string notr="true">font-size:20pt; font-weight:500;
-color: rgb(4, 45, 109);</string>
+    <string notr="true">font-size:16pt; font-weight:500;
+color:#4e97d9;</string>
    </property>
    <property name="text">
     <string>CITIZENSHIP CERTIFICATE</string>
@@ -242,6 +297,11 @@ color: rgb(4, 45, 109);</string>
      <width>151</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(4, 45, 109);</string>
@@ -273,9 +333,15 @@ background-color: rgb(255, 255, 255);</string>
      <height>20</height>
     </rect>
    </property>
+   <property name="minimumSize">
+    <size>
+     <width>241</width>
+     <height>20</height>
+    </size>
+   </property>
    <property name="styleSheet">
-    <string notr="true">font-size:20pt; font-weight:500;
-color: rgb(4, 45, 109);</string>
+    <string notr="true">font-size:16pt; font-weight:500;
+color:#4e97d9;</string>
    </property>
    <property name="text">
     <string>BIRTH CERTIFICATE</string>
@@ -298,19 +364,24 @@ background-color: rgb(255, 255, 255);</string>
   <widget class="QLabel" name="label_select">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>110</y>
-     <width>761</width>
+     <x>50</x>
+     <y>200</y>
+     <width>811</width>
      <height>91</height>
     </rect>
    </property>
+   <property name="minimumSize">
+    <size>
+     <width>811</width>
+     <height>91</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">color:#4e97d9;
-font-size:30pt; font-weight:400;</string>
+font-size:16pt; font-weight:400;</string>
    </property>
    <property name="text">
-    <string>Select the type of document you wish to provide, 
-and enter folloing information.</string>
+    <string>Select the type of document you wish to provide and enter following information:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_cc1">
@@ -321,6 +392,11 @@ and enter folloing information.</string>
      <width>151</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(4, 45, 109);</string>
@@ -338,9 +414,16 @@ and enter folloing information.</string>
      <height>81</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">color:#042d6d;
-font-size:45pt; font-weight:600;</string>
+font-size:22pt; font-weight:600;</string>
    </property>
    <property name="text">
     <string>We need to verify your ID</string>
@@ -355,6 +438,11 @@ font-size:45pt; font-weight:600;</string>
      <height>16</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(4, 45, 109);</string>
    </property>
@@ -365,19 +453,29 @@ font-size:45pt; font-weight:600;</string>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>600</x>
-     <y>50</y>
-     <width>281</width>
+     <x>50</x>
+     <y>120</y>
+     <width>761</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>761</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(4, 45, 109);
 </string>
    </property>
    <property name="text">
-    <string>In order to create an accout,
-we need to be 100% sure that You are You.</string>
+    <string>In order to create an accout we need to be 100% sure that You are You.</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_1L2">

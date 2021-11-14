@@ -89,7 +89,7 @@ void MainWindow::readTestsRecords() {
     for (int i = 0; i < testList.size(); i++) {
     QListWidgetItem *testItem = new QListWidgetItem(QIcon(":/new/prefix1/Images/test.png"), testList[i]);
     ui->listWidget_records->addItem(testItem);
-    ui->listWidget_records->setIconSize(QSize(80,80));
+    ui->listWidget_records->setIconSize(QSize(75,75));
     }
 
 } // end of readTestRecords function
@@ -152,7 +152,7 @@ void MainWindow::readVaccineRecords() {
         for (int i = 0; i < vacList.size(); i++) {
         QListWidgetItem *vacItem = new QListWidgetItem(QIcon(":/new/prefix1/Images/vaccine.png"), vacList[i]);
         ui->listWidget_records->addItem(vacItem);
-        ui->listWidget_records->setIconSize(QSize(80,80));
+        ui->listWidget_records->setIconSize(QSize(75,75));
         }
 
 

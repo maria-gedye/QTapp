@@ -78,16 +78,21 @@ background-color: rgb(255, 255, 255);</string>
      <widget class="QTextBrowser" name="textBrowser_subtitle">
       <property name="minimumSize">
        <size>
-        <width>369</width>
-        <height>30</height>
+        <width>539</width>
+        <height>52</height>
        </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
       </property>
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#042d6d;&quot;&gt;Please agree to continue&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:16pt; font-weight:600; color:#042d6d;&quot;&gt;Please agree to continue&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </item>
@@ -323,9 +328,14 @@ background-color: rgb(222, 236, 252);</string>
      <widget class="QTextBrowser" name="textBrowser_2requirement">
       <property name="minimumSize">
        <size>
-        <width>471</width>
+        <width>473</width>
         <height>100</height>
        </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
       </property>
       <property name="autoFillBackground">
        <bool>false</bool>
@@ -338,9 +348,8 @@ background-color: rgb(222, 236, 252);</string>
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-weight:600;&quot;&gt;I have read and agree&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; to the &lt;/span&gt;&lt;a href=&quot;https://www.health.govt.nz/my-health-account-privacy&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-weight:600; text-decoration: underline; color:#dca10d;&quot;&gt;My Health Privacy Policy&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; and &lt;/span&gt;&lt;a href=&quot;https://www.health.govt.nz/my-health-account-terms-use&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-weight:600; text-decoration: underline; color:#dca10d;&quot;&gt;Terms of use&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt;. I am making the application on my own behalf.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-style:italic;&quot;&gt;Pretending to be another person to obtain/alter their personal information is an offense under section 212 of the Privacy Act 2020 and could result in a conviction and a fine not exceeding $10,000.&lt;/span&gt;&lt;span style=&quot; font-style:italic;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-weight:600;&quot;&gt;I have read and agree&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; to the &lt;/span&gt;&lt;a href=&quot;https://www.health.govt.nz/my-health-account-privacy&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-weight:600; text-decoration: underline; color:#dca10d;&quot;&gt;My Health Privacy Policy&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt; and &lt;/span&gt;&lt;a href=&quot;https://www.health.govt.nz/my-health-account-terms-use&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-weight:600; text-decoration: underline; color:#dca10d;&quot;&gt;Terms of use&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Helvetica Neue';&quot;&gt;. I am making the application on my own behalf. &lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica Neue'; font-style:italic;&quot;&gt;Pretending to be another person to obtain/alter their personal information is an offense under section 212 of the Privacy Act 2020 and could result in a conviction and a fine not exceeding $10,000.&lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-style:italic;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </item>
@@ -381,6 +390,13 @@ p, li { white-space: pre-wrap; }
      <height>71</height>
     </size>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(4, 45, 109);
 color: rgb(255, 255, 255);
@@ -398,15 +414,26 @@ margin: 10, 10, 10, 10;</string>
      <x>70</x>
      <y>20</y>
      <width>471</width>
-     <height>41</height>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>471</width>
+     <height>51</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
    </property>
    <property name="html">
     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; color:#042d6d;&quot;&gt;Create your Account&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:22pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-weight:600; color:#042d6d;&quot;&gt;Create your Account&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>

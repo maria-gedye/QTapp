@@ -18,18 +18,27 @@
     <rect>
      <x>50</x>
      <y>80</y>
-     <width>591</width>
+     <width>701</width>
      <height>171</height>
     </rect>
    </property>
+   <property name="minimumSize">
+    <size>
+     <width>701</width>
+     <height>171</height>
+    </size>
+   </property>
    <property name="styleSheet">
-    <string notr="true">font-size:48pt; 
+    <string notr="true">font-size:30pt; 
 font-weight:600;
 color:#042d6d</string>
    </property>
    <property name="text">
     <string>My Covid Record
 Administrator Main Menu</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QWidget" name="layoutWidget">
@@ -38,7 +47,7 @@ Administrator Main Menu</string>
      <x>120</x>
      <y>240</y>
      <width>611</width>
-     <height>292</height>
+     <height>296</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">

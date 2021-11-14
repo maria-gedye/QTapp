@@ -23,12 +23,15 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font-size:48pt; 
+    <string notr="true">font-size:24pt; 
 font-weight:600;
-color:#042d6d</string>
+color:#042d6d;</string>
    </property>
    <property name="text">
     <string>Admin login menu</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="label_name">
@@ -40,8 +43,15 @@ color:#042d6d</string>
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">font-size:28pt;
+    <string notr="true">font-size:16pt;
 font-weight:400; 
 color:#042d6d</string>
    </property>
@@ -59,12 +69,12 @@ color:#042d6d</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font-size:28pt;
+    <string notr="true">font-size:16pt;
 font-weight:400; 
 color:#042d6d</string>
    </property>
    <property name="text">
-    <string>Passward</string>
+    <string>Password</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_name">
@@ -101,6 +111,11 @@ color:#042d6d</string>
      <width>80</width>
      <height>20</height>
     </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(248, 146, 28);
