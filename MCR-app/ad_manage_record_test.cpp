@@ -58,3 +58,22 @@ void ad_manage_record_test::on_pushButton_RT_record_clicked()
     recordfile.close();
 }
 
+
+void ad_manage_record_test::on_pushButton_RT_QR_clicked()
+{
+    QFile usernamefile(":/new/prefix1/txt/Usernames.txt");
+    if(!usernamefile.open(QFile::ReadOnly | QFile::Text))
+    {
+        QMessageBox::warning(this,"title","Record file not open");
+    }
+    QTextStream in(&usernamefile);
+    ui->listWidget_RT->clear();
+    while(!in.atEnd())
+    {
+        QString text = in.readLine();
+        ui->listWidget_RT->addItem(text);
+    }
+
+    usernamefile.close();
+}
+

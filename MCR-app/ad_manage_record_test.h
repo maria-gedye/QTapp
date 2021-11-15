@@ -22,6 +22,8 @@ private slots:
 
     void on_pushButton_RT_record_clicked();
 
+    void on_pushButton_RT_QR_clicked();
+
 private:
     Ui::ad_manage_record_test *ui;
 };
