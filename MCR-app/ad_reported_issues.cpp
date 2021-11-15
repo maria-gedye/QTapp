@@ -21,16 +21,7 @@ ad_reported_issues::~ad_reported_issues()
 
 void ad_reported_issues::on_pushButton_goback_clicked()
 {
-
-//    admin_menu *ad_m = new admin_menu(this);
-//    ad_m->setAttribute(Qt::WA_DeleteOnClose);
-//    ad_m->show();
-//    QDialog::exec();
-
-
-      admin_menu ad;
-      ad.setModal(true);
-      ad.exec();
+    this->close();
 }
 
 

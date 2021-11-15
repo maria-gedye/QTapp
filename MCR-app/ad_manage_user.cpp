@@ -51,9 +51,6 @@ void ad_manage_user::on_pushButton_Vrecord_clicked()
 
 void ad_manage_user::on_pushButton_goback_clicked()
 {
-    admin_menu am;
-    am.setModal(true);
-    am.exec();
-
+    this->close();
 }
 

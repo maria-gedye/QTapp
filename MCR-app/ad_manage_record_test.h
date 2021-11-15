@@ -24,8 +24,6 @@ private slots:
 
     void on_pushButton_RT_QR_clicked();
 
-    void on_pushButton_RT_edit_clicked();
-
     void on_pushButton_RT_test_edit_clicked();
 
 private:
