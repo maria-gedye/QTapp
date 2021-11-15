@@ -2,6 +2,7 @@
 #include "ui_ad_manage_record_test.h"
 #include <QFile>
 #include <QMessageBox>
+#include <QTextStream>
 
 ad_manage_record_test::ad_manage_record_test(QWidget *parent) :
     QDialog(parent),
@@ -29,12 +30,8 @@ void ad_manage_record_test::on_pushButton_RT_test_clicked()
         QMessageBox::warning(this,"title","Test file not open");
     }
     QTextStream in(&testfile);
-    ui->listWidget_RT->clear();
-    while(!in.atEnd())
-    {        
-        QString text = in.readLine();
-        ui->listWidget_RT->addItem(text);
-    }
+    QString text = in.readAll();
+    ui->plainTextEdit->setPlainText(text);
 
     testfile.close();
 }
@@ -48,12 +45,8 @@ void ad_manage_record_test::on_pushButton_RT_record_clicked()
         QMessageBox::warning(this,"title","Record file not open");
     }
     QTextStream in(&recordfile);
-    ui->listWidget_RT->clear();
-    while(!in.atEnd())
-    {
-        QString text = in.readLine();
-        ui->listWidget_RT->addItem(text);
-    }
+    QString text = in.readAll();
+    ui->plainTextEdit->setPlainText(text);
 
     recordfile.close();
 }
@@ -64,16 +57,28 @@ void ad_manage_record_test::on_pushButton_RT_QR_clicked()
     QFile usernamefile(":/new/prefix1/txt/Usernames.txt");
     if(!usernamefile.open(QFile::ReadOnly | QFile::Text))
     {
-        QMessageBox::warning(this,"title","Record file not open");
+        QMessageBox::warning(this,"title","Username file not open");
     }
     QTextStream in(&usernamefile);
-    ui->listWidget_RT->clear();
-    while(!in.atEnd())
-    {
-        QString text = in.readLine();
-        ui->listWidget_RT->addItem(text);
-    }
+    QString text = in.readAll();
+    ui->plainTextEdit->setPlainText(text);
 
     usernamefile.close();
+}
+
+
+void ad_manage_record_test::on_pushButton_RT_test_edit_clicked()
+{
+    QFile testfile(":/new/prefix1/txt/Tests.txt");
+    if(!testfile.open(QFile::WriteOnly | QFile::Text))
+    {
+        QMessageBox::warning(this,"title","Test file not open");
+    }
+    QTextStream out(&testfile);
+    QString data = ui->plainTextEdit->toPlainText();
+    out << data;
+
+    testfile.flush();
+    testfile.close();
 }
 
