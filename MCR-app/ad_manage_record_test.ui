@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>User Information Management</string>
   </property>
   <property name="sizeGripEnabled">
    <bool>false</bool>
@@ -116,7 +116,7 @@ margin: 10, 10, 10, 10;</string>
      <x>120</x>
      <y>180</y>
      <width>82</width>
-     <height>57</height>
+     <height>71</height>
     </rect>
    </property>
    <property name="font">
@@ -132,14 +132,15 @@ padding: 10,10,10,10;
 margin: 10, 10, 10, 10;</string>
    </property>
    <property name="text">
-    <string>RECORD</string>
+    <string>VACCINE
+RECORD</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_RT_QR">
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>240</y>
+     <y>250</y>
      <width>82</width>
      <height>57</height>
     </rect>
@@ -168,6 +169,31 @@ margin: 10, 10, 10, 10;</string>
      <width>481</width>
      <height>311</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_RT_edit">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>460</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255, 154, 128);
+color: rgb(255, 255, 255);
+border: none;
+padding: 10,10,10,10;
+margin: 10, 10, 10, 10;</string>
+   </property>
+   <property name="text">
+    <string>Edit</string>
    </property>
   </widget>
  </widget>

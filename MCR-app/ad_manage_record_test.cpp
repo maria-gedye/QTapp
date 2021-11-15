@@ -29,8 +29,9 @@ void ad_manage_record_test::on_pushButton_RT_test_clicked()
         QMessageBox::warning(this,"title","Test file not open");
     }
     QTextStream in(&testfile);
+    ui->listWidget_RT->clear();
     while(!in.atEnd())
-    {
+    {        
         QString text = in.readLine();
         ui->listWidget_RT->addItem(text);
     }
@@ -47,6 +48,7 @@ void ad_manage_record_test::on_pushButton_RT_record_clicked()
         QMessageBox::warning(this,"title","Record file not open");
     }
     QTextStream in(&recordfile);
+    ui->listWidget_RT->clear();
     while(!in.atEnd())
     {
         QString text = in.readLine();

@@ -90,7 +90,7 @@ margin: 10, 10, 10, 10;</string>
      <x>100</x>
      <y>90</y>
      <width>87</width>
-     <height>132</height>
+     <height>142</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">

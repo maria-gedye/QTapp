@@ -9,9 +9,9 @@ userqr::userqr(QWidget *parent) :
     ui->setupUi(this);
 
     QPixmap rqr(":/new/prefix1/Images/qrcode1.png");
-    ui->label_userrqr->setPixmap(rqr);
+    ui->label_userrqr->setPixmap(rqr.scaled(271,271));
     QPixmap cqr(":/new/prefix1/Images/stock-photo-random-generated-qr-code-abstract-pattern-103027724.jpg");
-    ui->label_usercqr->setPixmap(cqr.scaled(231,271));
+    ui->label_usercqr->setPixmap(cqr.scaled(271,271));
 }
 
 userqr::~userqr()
