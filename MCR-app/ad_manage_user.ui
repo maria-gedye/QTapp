@@ -84,13 +84,13 @@ margin: 10, 10, 10, 10;</string>
     <string>Go Back</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>100</x>
      <y>90</y>
-     <width>84</width>
-     <height>120</height>
+     <width>87</width>
+     <height>132</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -114,7 +114,7 @@ margin: 10, 10, 10, 10;</string>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_record">
+     <widget class="QPushButton" name="pushButton_Vrecord">
       <property name="font">
        <font>
         <pointsize>10</pointsize>
@@ -128,7 +128,8 @@ padding: 10,10,10,10;
 margin: 10, 10, 10, 10;</string>
       </property>
       <property name="text">
-       <string>RECORD</string>
+       <string>VACCINE
+RECORD</string>
       </property>
      </widget>
     </item>

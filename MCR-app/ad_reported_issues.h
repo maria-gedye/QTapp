@@ -19,6 +19,8 @@ public:
 private slots:
     void on_pushButton_goback_clicked();
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::ad_reported_issues *ui;
 };

@@ -18,7 +18,7 @@ public:
 private slots:
     void on_pushButton_test_clicked();
 
-    void on_pushButton_record_clicked();
+    void on_pushButton_Vrecord_clicked();
 
     void on_pushButton_goback_clicked();
 

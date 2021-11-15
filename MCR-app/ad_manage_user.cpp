@@ -33,7 +33,7 @@ void ad_manage_user::on_pushButton_test_clicked()
 }
 
 
-void ad_manage_user::on_pushButton_record_clicked()
+void ad_manage_user::on_pushButton_Vrecord_clicked()
 {
     QFile recordfile(":/new/prefix1/txt/Vaccines.txt");
     if(!recordfile.open(QFile::ReadOnly | QFile::Text))
@@ -46,6 +46,7 @@ void ad_manage_user::on_pushButton_record_clicked()
 
     recordfile.close();
 }
+
 
 
 void ad_manage_user::on_pushButton_goback_clicked()
