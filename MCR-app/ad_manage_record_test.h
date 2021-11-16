@@ -26,6 +26,10 @@ private slots:
 
     void on_pushButton_RT_test_edit_clicked();
 
+    void on_pushButton_RT_record_edit_clicked();
+
+    void on_pushButton_RT_QR_edit_clicked();
+
 private:
     Ui::ad_manage_record_test *ui;
 };

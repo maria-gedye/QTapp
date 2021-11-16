@@ -56,6 +56,9 @@ color:#042d6d</string>
      <pointsize>10</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgb(255, 154, 128);
 color: rgb(255, 255, 255);
@@ -81,6 +84,9 @@ margin: 10, 10, 10, 10;</string>
      <pointsize>10</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgb(153, 222, 255);
 color: rgb(255, 255, 255);
@@ -95,7 +101,7 @@ margin: 10, 10, 10, 10;</string>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>30</x>
      <y>130</y>
      <width>81</width>
      <height>16</height>
@@ -124,6 +130,9 @@ margin: 10, 10, 10, 10;</string>
      <pointsize>10</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgb(153, 222, 255);
 color: rgb(255, 255, 255);
@@ -150,6 +159,9 @@ RECORD</string>
      <pointsize>10</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgb(153, 222, 255);
 color: rgb(255, 255, 255);
@@ -175,6 +187,9 @@ margin: 10, 10, 10, 10;</string>
      <pointsize>10</pointsize>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgb(255, 154, 128);
 color: rgb(255, 255, 255);
@@ -199,6 +214,9 @@ margin: 10, 10, 10, 10;</string>
     <font>
      <pointsize>10</pointsize>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgb(255, 154, 128);
@@ -242,6 +260,9 @@ margin: 10, 10, 10, 10;</string>
     <font>
      <pointsize>10</pointsize>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgb(255, 154, 128);

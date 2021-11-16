@@ -404,6 +404,9 @@ p, li { white-space: pre-wrap; }
      <bold>false</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(4, 45, 109);
 color: rgb(255, 255, 255);

@@ -1,5 +1,6 @@
 #include "ad_manage_record_test.h"
 #include "ui_ad_manage_record_test.h"
+#include "ad_manage_qr.h"
 #include <QFile>
 #include <QMessageBox>
 #include <QTextStream>
@@ -54,16 +55,7 @@ void ad_manage_record_test::on_pushButton_RT_record_clicked()
 
 void ad_manage_record_test::on_pushButton_RT_QR_clicked()
 {
-    QFile usernamefile(":/new/prefix1/txt/Usernames.txt");
-    if(!usernamefile.open(QFile::ReadOnly | QFile::Text))
-    {
-        QMessageBox::warning(this,"title","Username file not open");
-    }
-    QTextStream in(&usernamefile);
-    QString text = in.readAll();
-    ui->plainTextEdit->setPlainText(text);
 
-    usernamefile.close();
 }
 
 
@@ -80,5 +72,29 @@ void ad_manage_record_test::on_pushButton_RT_test_edit_clicked()
 
     testfile.flush();
     testfile.close();
+}
+
+
+void ad_manage_record_test::on_pushButton_RT_record_edit_clicked()
+{
+    QFile recordfile(":/new/prefix1/txt/Vaccines.txt");
+    if(!recordfile.open(QFile::WriteOnly | QFile::Text))
+    {
+        QMessageBox::warning(this,"title","Record file not open");
+    }
+    QTextStream out(&recordfile);
+    QString data = ui->plainTextEdit->toPlainText();
+    out << data;
+
+    recordfile.flush();
+    recordfile.close();
+}
+
+
+void ad_manage_record_test::on_pushButton_RT_QR_edit_clicked()
+{
+    ad_manage_qr qr;
+    qr.setModal(true);
+    qr.exec();
 }
 

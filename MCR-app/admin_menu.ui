@@ -56,6 +56,9 @@ Administrator Main Menu</string>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QPushButton" name="pushButton_manage_user">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgba(231,241,248,255);
 color: rgba(18,113,188,255);
@@ -71,6 +74,9 @@ margin: 10, 10, 10, 10;</string>
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_manage_RT">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgba(231,241,248,255);
 color: rgba(18,113,188,255);
@@ -86,6 +92,9 @@ margin: 10, 10, 10, 10;</string>
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_issues">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgba(231,241,248,255);
 color: rgba(18,113,188,255);
@@ -101,6 +110,9 @@ margin: 10, 10, 10, 10;</string>
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_logout">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgba(254,234,191,255);
 color: rgba(251,146,44,255);

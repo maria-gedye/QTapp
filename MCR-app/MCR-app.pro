@@ -9,6 +9,7 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    ad_manage_qr.cpp \
     ad_manage_record_test.cpp \
     ad_manage_user.cpp \
     ad_reported_issues.cpp \
@@ -24,6 +25,7 @@ SOURCES += \
     verifyid.cpp
 
 HEADERS += \
+    ad_manage_qr.h \
     ad_manage_record_test.h \
     ad_manage_user.h \
     ad_reported_issues.h \
@@ -38,6 +40,7 @@ HEADERS += \
     verifyid.h
 
 FORMS += \
+    ad_manage_qr.ui \
     ad_manage_record_test.ui \
     ad_manage_user.ui \
     ad_reported_issues.ui \
