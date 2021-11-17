@@ -68,11 +68,18 @@ private slots:
 
     void on_pushButton_EXIT_clicked();
 
+    void on_pushButton_2changeLogin_clicked();
+
+    void on_pushButton_3changeLogin_clicked();
+
+
 private:
     Ui::MainWindow *ui;
     SignupDialog *signup_ui;
+    SignupDialog *changeLogin_ui;
     verifyid *verify_ui;
     report_issues *report_issues_ui;
+
 
 };
 #endif // MAINWINDOW_H

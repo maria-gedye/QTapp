@@ -44,7 +44,7 @@ void MainWindow::readTestsRecords() {
     int i = 0;
 
     search_name = curUsr->getName();
-        qInfo() << "Searching name:  " << search_name;
+        qInfo() << "Searching name in mw:  " << search_name;
 
     while(!in.atEnd()) {
         line = in.readLine();
@@ -53,7 +53,7 @@ void MainWindow::readTestsRecords() {
             i++;
         }
     }
-    t_file.flush();
+
     t_file.close();
 
        for (int j = 0; j < allRec.size(); j++) {
@@ -159,6 +159,8 @@ void MainWindow::readVaccineRecords() {
 } // end of readVaccineRecord function
 
 
+
+
 // private slots below...
 
 void MainWindow::on_pushButton_start_3_clicked()
@@ -233,7 +235,7 @@ void MainWindow::on_pushButton_loginsubmit_clicked()
 
     loggedin = curUsr->login(usrSearch); // returns a bool after file read
 
-    curUsr->setLogin(curUsr, email, password); // store in current user object
+    curUsr->setLogin(curUsr, email, password, loggedin); // stores in mainwindow user object
 
     if (loggedin) {
         ui->stackedWidget->setCurrentIndex(2);
@@ -317,6 +319,27 @@ void MainWindow::on_pushButton_NEXT_clicked()
 
 void MainWindow::on_pushButton_EXIT_clicked()
 {
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+void MainWindow::on_pushButton_2changeLogin_clicked()
+{
+
+    changeLogin_ui = new SignupDialog(this);  // calls constructor first!
+    changeLogin_ui->changeIndex();
+    changeLogin_ui->setCurUsr(curUsr);
+    changeLogin_ui->show();
 
 }
+
+
+void MainWindow::on_pushButton_3changeLogin_clicked()
+{
+    changeLogin_ui = new SignupDialog(this);
+    changeLogin_ui->changeIndex();
+    changeLogin_ui->show();
+}
+
+
 

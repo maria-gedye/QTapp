@@ -1,0 +1,7 @@
+// just default logins to use incase Users.txt is accidentally deleted
+pia@gmail.com,pia1
+farhan@gmail.com,far1
+john@gmail.com,john
+jane@gmail.com,jane
+test@gmail.com,test
+test2@gmail.com,test

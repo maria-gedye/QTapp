@@ -11,6 +11,7 @@ QString User::getName() {
 
 void User::printInfo() {
     qInfo() << firstName << " " << surname;
+    qInfo() << "LoggedIn?  " << loggedIn;
     qInfo() << email << " " << password;
     qInfo() << "ID verified? " << IDverified;
     qInfo() << "ID:  " << ID1 << "  " << ID2;
@@ -20,12 +21,24 @@ bool User::getVerification() {
     return IDverified;
 }
 
+bool User::getLoggedIn() {
+   return loggedIn;
+}
+
 QString User::getID1() {
     return ID1;
 }
 
 QString User::getID2() {
     return ID2;
+}
+
+QString User::getPwd() {
+    return password;
+}
+
+QString User::getEmail() {
+    return email;
 }
 
 void User::setName(User* usr, int p) {    // called in isVerified()
@@ -104,9 +117,18 @@ bool User::isVerified(User* usr, QString s) {    // gets called in verifyid.cpp
 
 } // end of isVerified function
 
-void User::setLogin(User* usr, QString e, QString p) {
+void User::setLogin(User* usr, QString e, QString p, bool l) {
     usr->email = e;
     usr->password = p;
+    usr->loggedIn = l;
+}
+
+void User::resetEmail(User* usr, QString a) {
+    usr->email = a;
+}
+
+void User::resetPwd(User* usr, QString a) {
+    usr->password = a;
 }
 
 bool User::login(QString s) {     // called in mainwindow.cpp

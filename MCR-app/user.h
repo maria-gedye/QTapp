@@ -12,7 +12,7 @@ class User : public QObject      // user-defined class
 {
     Q_OBJECT
     QString firstName, surname, email, password;
-    bool IDverified;
+    bool IDverified, loggedIn;
     QString ID1, ID2;
 
 public:
@@ -32,9 +32,15 @@ public:
 
     bool getVerification();
 
+    bool getLoggedIn();
+
     QString getID1();
 
     QString getID2();
+
+    QString getPwd();
+
+    QString getEmail();
 
  // setter functions:
     void setName(User* usr, int p);
@@ -43,7 +49,11 @@ public:
 
     bool isVerified(User* usr, QString s);
 
-    void setLogin(User* usr, QString e, QString p);
+    void setLogin(User* usr, QString e, QString p, bool l);
+
+    void resetEmail(User* usr, QString a);
+
+    void resetPwd(User* usr, QString a);
 
     bool login(QString s);
 
