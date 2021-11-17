@@ -30,7 +30,7 @@ void report_issues::on_pushButton_RIsend_clicked()
     int issueID = createID() + 100;
     QFile file("Issues.txt");
 
-    if (!file.open(QFile::WriteOnly|QFile::Text)) {
+    if (!file.open(QFile::Append|QFile::Text)) {
         qInfo() << "File is not open";
     }
 
