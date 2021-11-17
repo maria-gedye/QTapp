@@ -15,6 +15,13 @@ public:
     explicit ad_manage_user(QWidget *parent = nullptr);
     ~ad_manage_user();
 
+private slots:
+    void on_pushButton_test_clicked();
+
+    void on_pushButton_Vrecord_clicked();
+
+    void on_pushButton_goback_clicked();
+
 private:
     Ui::ad_manage_user *ui;
 };

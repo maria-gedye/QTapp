@@ -50,12 +50,15 @@ Administrator Main Menu</string>
      <x>70</x>
      <y>240</y>
      <width>611</width>
-     <height>296</height>
+     <height>303</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QPushButton" name="pushButton_manage_user">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgba(231,241,248,255);
 color: rgba(18,113,188,255);
@@ -65,12 +68,15 @@ padding: 10,10,10,10;
 margin: 10, 10, 10, 10;</string>
       </property>
       <property name="text">
-       <string>Manage user</string>
+       <string>User Information</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_manage_RT">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgba(231,241,248,255);
 color: rgba(18,113,188,255);
@@ -80,12 +86,15 @@ padding: 10,10,10,10;
 margin: 10, 10, 10, 10;</string>
       </property>
       <property name="text">
-       <string>Manage Record / Test</string>
+       <string>Manage Record / Test / QR Code</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_issues">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgba(231,241,248,255);
 color: rgba(18,113,188,255);
@@ -101,6 +110,9 @@ margin: 10, 10, 10, 10;</string>
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_logout">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgba(254,234,191,255);
 color: rgba(251,146,44,255);
