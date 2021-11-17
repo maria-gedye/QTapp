@@ -27,8 +27,7 @@ void ad_reported_issues::on_pushButton_goback_clicked()
 
 void ad_reported_issues::on_pushButton_2_clicked()
 {
-    QString newpath = QDir::currentPath();
-    QFile file(newpath +"/Issues.txt");
+    QFile file("Issues.txt");
 
     if(!file.open(QFile::ReadOnly | QFile::Text))
     {

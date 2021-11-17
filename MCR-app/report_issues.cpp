@@ -28,10 +28,9 @@ QString report_issues::timeStamp() {
 void report_issues::on_pushButton_RIsend_clicked()
 {
     int issueID = createID() + 100;
-    QString newpath = QDir::currentPath();
-    QFile file(newpath +"/Issues.txt");
+    QFile file("Issues.txt");
 
-    if (!file.open(QFile::Append|QFile::Text)) {
+    if (!file.open(QFile::WriteOnly|QFile::Text)) {
         qInfo() << "File is not open";
     }
 
