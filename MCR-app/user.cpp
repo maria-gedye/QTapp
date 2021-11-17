@@ -170,8 +170,9 @@ bool User::login(QString s) {     // called in mainwindow.cpp
 
 } // end of login function
 
+
 void User::signup(QString e, QString p) {
-//        QFile file("/Users/mariagedye/QTapp/MCR-app/txt/Users.txt");  // absolute path
+
     QString newpath = QDir::currentPath();
       QFile file(newpath + "/" + "Users.txt"); // this is writing to Users.txt in the build folder only
 

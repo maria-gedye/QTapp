@@ -20,6 +20,7 @@ public:
 
     User Susr;
     User *curUsr = &Susr;
+    QString newEmail;
 
     void changeIndex();
 
@@ -29,6 +30,15 @@ public:
 
     void rewriteUsersFile(QStringList &beforeList, QString &newline, QStringList &postList);
 
+    void setNewEmail(QString e) {
+        newEmail = e;
+    }
+
+    QString updateDisplayEmail(QString &e) {
+        e = newEmail;
+        return e;
+    }
+
 private slots:
     void on_pushButton_submit_clicked(bool checked);
 
@@ -36,6 +46,8 @@ private slots:
 
     void on_pushButton_4save_clicked();
 
+
+    void on_pushButton_4cancel_clicked();
 
 private:
     Ui::SignupDialog *ui;

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>SignupDialog</class>
  <widget class="QDialog" name="SignupDialog">
@@ -20,6 +21,9 @@
      <width>621</width>
      <height>421</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(240, 248, 253);</string>
    </property>
    <property name="currentIndex">
     <number>1</number>
@@ -678,6 +682,30 @@ margin: 10, 10, 10, 10;</string>
      </property>
      <property name="text">
       <string>Save Changes</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4cancel">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>330</y>
+       <width>80</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(78, 151, 217)</string>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
      </property>
     </widget>
    </widget>

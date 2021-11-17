@@ -76,7 +76,7 @@ void SignupDialog::extractMatchingLine(QStringList &beforeList, QStringList &pos
 
            line = in.readLine();
 
-           if ((line.contains(email)) || (line.contains(pwd))) {
+           if (line.contains(email)) {
                match = lineCount;           // store matching line number;
                p2 = in.pos();          // get pos end of readline
 
@@ -131,7 +131,7 @@ void SignupDialog::rewriteUsersFile(QStringList &beforeList, QString &newline, Q
         out << beforeList.at(i).toLocal8Bit().constData() << Qt::endl;
     }
 
-    out << newline + "\n";
+    out << "\n" + newline;
 
     for(int i = 0; i < postList.size(); i++) {
         out << postList.at(i).toLocal8Bit().constData() << Qt::endl;
@@ -209,9 +209,14 @@ void SignupDialog::on_pushButton_4save_clicked()
     QString newEmail = ui->lineEdit_4newEmail->text();
     QString newPwd = ui->lineEdit_4newPassword->text();
 
+    QStringList beforeList, postList;
+
+    extractMatchingLine(beforeList, postList);
+
     if (!newEmail.isEmpty()) {
         // replace email in curUsr object if there is text in editLine
         curUsr->resetEmail(curUsr, newEmail);
+        setNewEmail(newEmail);
     }
 
     if (!newPwd.isEmpty()) {
@@ -219,14 +224,23 @@ void SignupDialog::on_pushButton_4save_clicked()
         curUsr->resetPwd(curUsr, newPwd);
     }
 
-    QStringList beforeList, postList;
-
     QString newpwd = curUsr->getPwd();
     QString neweml = curUsr->getEmail();
     QString newline = neweml + "," + newpwd;
 
-    extractMatchingLine(beforeList, postList);
     rewriteUsersFile(beforeList, newline, postList);
 
+    QMessageBox outcome;
+    outcome.setText("Your changes have been saved");
+    outcome.exec();
+
+    this->close();
+
+}
+
+
+void SignupDialog::on_pushButton_4cancel_clicked()
+{
+    this->close();
 }
 

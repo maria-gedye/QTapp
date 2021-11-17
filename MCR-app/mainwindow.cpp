@@ -331,6 +331,12 @@ void MainWindow::on_pushButton_2changeLogin_clicked()
     changeLogin_ui->setCurUsr(curUsr);
     changeLogin_ui->show();
 
+    // needs fixing...
+//    QString e;
+//    changeLogin_ui->updateDisplayEmail(e); // returns string
+//    curUsr->resetEmail(curUsr, e);
+//        ui->label_2Email->setText(e);
+
 }
 
 
@@ -338,6 +344,7 @@ void MainWindow::on_pushButton_3changeLogin_clicked()
 {
     changeLogin_ui = new SignupDialog(this);
     changeLogin_ui->changeIndex();
+    changeLogin_ui->setCurUsr(curUsr);
     changeLogin_ui->show();
 }
 
