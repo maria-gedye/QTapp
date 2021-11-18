@@ -5,6 +5,7 @@
 #include <QMessageBox>
 
 #include "user.h"
+#include "tests.h"
 
 namespace Ui {
 class SignupDialog;
@@ -51,6 +52,7 @@ private slots:
 
 private:
     Ui::SignupDialog *ui;
+    Tests *testObject;
 
 };
 

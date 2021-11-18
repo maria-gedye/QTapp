@@ -13,6 +13,7 @@
 #include "report_issues.h"
 #include "user.h"
 #include "admin.h"
+#include "tests.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

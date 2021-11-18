@@ -26,7 +26,7 @@
     <string notr="true">background-color: rgb(240, 248, 253);</string>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="page_4createAcc">
     <widget class="QTextBrowser" name="textBrowser_title">
@@ -504,6 +504,9 @@ margin: 10, 10, 10, 10;</string>
         <property name="styleSheet">
          <string notr="true">color: rgb(0, 0, 0);
 background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
         </property>
        </widget>
       </item>

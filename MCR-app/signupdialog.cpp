@@ -38,9 +38,9 @@ void SignupDialog::changeIndex() {
 
 }
 
-void SignupDialog::setCurUsr(User *cu) {
 
-    // retrieve login details from mw
+void SignupDialog::setCurUsr(User *cu) {
+        // retrieve login details from main window
     QString email = cu->getEmail();
     QString pwd = cu->getPwd();
     bool loggedin = cu->getLoggedIn();
@@ -48,9 +48,9 @@ void SignupDialog::setCurUsr(User *cu) {
     curUsr->printInfo(); // check if set
 }
 
-void SignupDialog::extractMatchingLine(QStringList &beforeList, QStringList &postList) {
 
-    // first search users for matching login details,
+void SignupDialog::extractMatchingLine(QStringList &beforeList, QStringList &postList) {
+         // first search users for matching login details,
        // then get line counts for before and after the matching line
        // next store all the other lines in QStringList
 
@@ -67,11 +67,11 @@ void SignupDialog::extractMatchingLine(QStringList &beforeList, QStringList &pos
 
        pwd = curUsr->getPwd();
        email = curUsr->getEmail();
-
        qInfo() << "curUsr's email & password  " << email << "  " << pwd;
 
+
        // 1. readLine to get positions, countline n find matching line
-       p1 = in.pos();          // get current pos before loop
+       p1 = in.pos();
        while(!in.atEnd()) {
 
            line = in.readLine();
@@ -114,6 +114,7 @@ void SignupDialog::extractMatchingLine(QStringList &beforeList, QStringList &pos
 
 
 }  // ennd of extractMatchingLine function
+
 
 
 void SignupDialog::rewriteUsersFile(QStringList &beforeList, QString &newline, QStringList &postList) {
@@ -162,12 +163,13 @@ void SignupDialog::on_pushButton_submit_clicked(bool checked)
     QString password = ui->lineEdit_2Password->text();
 
         if(checked) {
+//              if (!hasAtSign && !hasFullStop) {
             curUsr->signup(email, password); // write email & password to Users.txt
 
             outcome.setText("New Account created");
             outcome.exec();
             this->close();      // close signup dialog
-
+//           }
         } else {
             outcome.setText("Please agree to Privacy Policy before continuing");
             outcome.exec();
@@ -214,6 +216,7 @@ void SignupDialog::on_pushButton_4save_clicked()
     extractMatchingLine(beforeList, postList);
 
     if (!newEmail.isEmpty()) {
+//// ** Tests below **
         // replace email in curUsr object if there is text in editLine
         curUsr->resetEmail(curUsr, newEmail);
         setNewEmail(newEmail);

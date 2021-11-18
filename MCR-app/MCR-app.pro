@@ -20,6 +20,7 @@ SOURCES += \
     mainwindow.cpp \
     report_issues.cpp \
     signupdialog.cpp \
+    tests.cpp \
     user.cpp \
     userqr.cpp \
     verifyid.cpp
@@ -35,6 +36,7 @@ HEADERS += \
     mainwindow.h \
     report_issues.h \
     signupdialog.h \
+    tests.h \
     user.h \
     userqr.h \
     verifyid.h
