@@ -16,6 +16,7 @@ MainWindow::MainWindow(QWidget *parent)     // constructor
     ui->label_3_mainimage->setScaledContents(true);
 
     ui->stackedWidget->setCurrentIndex(0);
+    ui->pushButton_testadminqr->hide();
 
 }
 
