@@ -13,11 +13,13 @@ class Tests
 public:    
 Tests();
 
+// these 3 functions have been defined in tests.cpp
 bool emailHasAtSign(QString email);
 
 bool emailHasFullStops(QString email);
 
 bool emailAlreadyExists(QString email);
+
 
 // will implement these tests later...
 void showPasswordHint(QString password);

@@ -163,13 +163,12 @@ void SignupDialog::on_pushButton_submit_clicked(bool checked)
     QString password = ui->lineEdit_2Password->text();
 
         if(checked) {
-//              if (!hasAtSign && !hasFullStop) {
             curUsr->signup(email, password); // write email & password to Users.txt
 
             outcome.setText("New Account created");
             outcome.exec();
             this->close();      // close signup dialog
-//           }
+
         } else {
             outcome.setText("Please agree to Privacy Policy before continuing");
             outcome.exec();
@@ -245,5 +244,14 @@ void SignupDialog::on_pushButton_4save_clicked()
 void SignupDialog::on_pushButton_4cancel_clicked()
 {
     this->close();
+}
+
+
+void SignupDialog::on_lineEdit_Email_editingFinished()
+{
+    QString e = ui->lineEdit_Email->text();
+
+    testObject->emailAlreadyExists(e);
+
 }
 

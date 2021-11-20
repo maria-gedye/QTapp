@@ -50,6 +50,8 @@ private slots:
 
     void on_pushButton_4cancel_clicked();
 
+    void on_lineEdit_Email_editingFinished();
+
 private:
     Ui::SignupDialog *ui;
     Tests *testObject;
