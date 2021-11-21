@@ -8,12 +8,17 @@
 #include <QDebug>
 #include <QDir>
 
+#include "tests.h"
+
 class User : public QObject      // user-defined class
 {
     Q_OBJECT
     QString firstName, surname, email, password;
     bool IDverified, loggedIn;
     QString ID1, ID2;
+    int counter;
+
+    Tests *testObject;
 
 public:
     explicit User(QObject *parent = nullptr);
@@ -23,7 +28,9 @@ public:
         surname = s;
         ID1 = i1;
         ID2 = i2;
+        counter = 0;
     }
+
 
  // getter functions:
     QString getName();
@@ -42,6 +49,8 @@ public:
 
     QString getEmail();
 
+    int getCount();
+
  // setter functions:
     void setName(User* usr, int p);
 
@@ -55,9 +64,11 @@ public:
 
     void resetPwd(User* usr, QString a);
 
-    bool login(QString s);
+    bool login(QString e, QString p, int a);
 
     void signup(QString e, QString p);
+
+    void setCount(int i);
 
 signals:
 

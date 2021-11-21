@@ -4,6 +4,7 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QTextStream>
+#include <QDir>
 
 ad_manage_record_test::ad_manage_record_test(QWidget *parent) :
     QDialog(parent),
@@ -25,7 +26,7 @@ void ad_manage_record_test::on_pushButton_RT_goback_clicked()
 
 void ad_manage_record_test::on_pushButton_RT_test_clicked()
 {
-    QFile testfile("Tests.txt");
+    QFile testfile(":/new/prefix1/txt/Tests.txt");
     if(!testfile.open(QFile::ReadOnly | QFile::Text))
     {
         QMessageBox::warning(this,"title","Test file not open");
@@ -40,7 +41,7 @@ void ad_manage_record_test::on_pushButton_RT_test_clicked()
 
 void ad_manage_record_test::on_pushButton_RT_record_clicked()
 {
-    QFile recordfile("Vaccines.txt");
+    QFile recordfile(":/new/prefix1/txt/Vaccines.txt");
     if(!recordfile.open(QFile::ReadOnly | QFile::Text))
     {
         QMessageBox::warning(this,"title","Record file not open");
@@ -61,8 +62,9 @@ void ad_manage_record_test::on_pushButton_RT_QR_clicked()
 
 void ad_manage_record_test::on_pushButton_RT_test_edit_clicked()
 {
-    QFile testfile("Tests.txt");
-    if(!testfile.open(QFile::WriteOnly | QFile::Text))
+    QString newpath = QDir::currentPath();
+      QFile testfile(newpath + "/" + "Tests.txt");
+    if(!testfile.open(QFile::Append | QFile::Text))
     {
         QMessageBox::warning(this,"title","Test file not open");
     }
@@ -77,8 +79,9 @@ void ad_manage_record_test::on_pushButton_RT_test_edit_clicked()
 
 void ad_manage_record_test::on_pushButton_RT_record_edit_clicked()
 {
-    QFile recordfile("Vaccines.txt");
-    if(!recordfile.open(QFile::WriteOnly | QFile::Text))
+    QString newpath = QDir::currentPath();
+      QFile recordfile(newpath + "/" + "Vaccines.txt");
+    if(!recordfile.open(QFile::Append | QFile::Text))
     {
         QMessageBox::warning(this,"title","Record file not open");
     }

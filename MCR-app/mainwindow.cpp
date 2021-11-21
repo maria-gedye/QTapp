@@ -28,7 +28,7 @@ MainWindow::~MainWindow()   // destructor
 // user-defined functions below...
 void MainWindow::delay()
 {
-    QTime dieTime= QTime::currentTime().addSecs(5);
+    QTime dieTime= QTime::currentTime().addSecs(5);     // this allows 5 seconds for verify window to run its functions before mainwindow continues
     while (QTime::currentTime() < dieTime)
         QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
 }
@@ -189,8 +189,6 @@ void MainWindow::on_pushButton_verifyID_clicked()
 verify_again:
         verify_ui->getVerifyDialogOutput(ID1, ID2, FirstName, verified);
         curUsr->setID(curUsr, ID1, ID2, verified, FirstName);
-        qInfo() << "verifybutton: ";
-        qInfo() << ID1 << " " << ID2 << " " << FirstName << " " << verified;
 
      if (verified) {
          ui->stackedWidget->setCurrentIndex(3);
@@ -201,6 +199,9 @@ verify_again:
          if (count < 5)
             goto verify_again;
      }
+
+     qInfo() << "verifybutton: ";
+     qInfo() << ID1 << " " << ID2 << " " << FirstName << " " << verified;
 
 } // end of verify ID slot
 
@@ -217,6 +218,7 @@ void MainWindow::on_pushButton_adminLogin_clicked()
 void MainWindow::on_pushButton_loginUsr_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);  // goto login window
+    curUsr->setCount(1);
 }
 
 
@@ -229,19 +231,21 @@ void MainWindow::on_pushButton_loginsubmit_clicked()
     QString email, password, usrSearch;
     email = ui->lineEdit_loginEmail->text();
     password = ui->lineEdit_loginPassword->text();
-    usrSearch = email + ',' + password;
+
+    int count = curUsr->getCount();
+    qInfo() << "current count: " << count;
+    loggedin = curUsr->login(email, password, count);
+
+    if (loggedin) {
+        curUsr->setLogin(curUsr, email, password, loggedin); // stores in mainwindow's current user obj
+        ui->stackedWidget->setCurrentIndex(2);
+           ui->label_2Email->setText(email);
+    } else {
+            curUsr->setCount(2);
+    }
 
     ui->lineEdit_loginEmail->clear();       // clear form
     ui->lineEdit_loginPassword->clear();
-
-    loggedin = curUsr->login(usrSearch); // returns a bool after file read
-
-    curUsr->setLogin(curUsr, email, password, loggedin); // stores in mainwindow user object
-
-    if (loggedin) {
-        ui->stackedWidget->setCurrentIndex(2);
-           ui->label_2Email->setText(email);
-    }
 
 } // end of login slot
 

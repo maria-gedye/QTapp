@@ -4,8 +4,9 @@
 #include <QObject>
 #include <QMessageBox>
 #include <QDebug>
+#include <QDir>
+#include <QFile>
 
-#include "user.h"
 
 class Tests
 {
@@ -13,22 +14,16 @@ class Tests
 public:    
 Tests();
 
-// these 3 functions have been defined in tests.cpp
 bool emailHasAtSign(QString email);
 
 bool emailHasFullStops(QString email);
 
 bool emailAlreadyExists(QString email);
 
-
-// will implement these tests later...
-void showPasswordHint(QString password);
-
-bool passwordIsHidden(QString password);
+void showPasswordHint(QString hint);
 
 bool passwordHasMinOfSixChar(QString password);
 
-bool userIsVerified(User currentUser);
 
 };
 

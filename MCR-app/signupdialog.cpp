@@ -154,6 +154,7 @@ void SignupDialog::rewriteUsersFile(QStringList &beforeList, QString &newline, Q
 
 // private slots below...
 
+// signing up
 void SignupDialog::on_pushButton_submit_clicked(bool checked)
 {
     QMessageBox outcome;
@@ -203,7 +204,7 @@ void SignupDialog::on_lineEdit_4pword_check_returnPressed()
 
 
 
-
+// updating email or password
 void SignupDialog::on_pushButton_4save_clicked()
 {  
 
@@ -215,7 +216,7 @@ void SignupDialog::on_pushButton_4save_clicked()
     extractMatchingLine(beforeList, postList);
 
     if (!newEmail.isEmpty()) {
-//// ** Tests below **
+
         // replace email in curUsr object if there is text in editLine
         curUsr->resetEmail(curUsr, newEmail);
         setNewEmail(newEmail);
@@ -224,6 +225,7 @@ void SignupDialog::on_pushButton_4save_clicked()
     if (!newPwd.isEmpty()) {
         // replace password in curUsr object if there is text in editLine
         curUsr->resetPwd(curUsr, newPwd);
+        qInfo() << curUsr->getPwd();
     }
 
     QString newpwd = curUsr->getPwd();
@@ -233,7 +235,7 @@ void SignupDialog::on_pushButton_4save_clicked()
     rewriteUsersFile(beforeList, newline, postList);
 
     QMessageBox outcome;
-    outcome.setText("Your changes have been saved");
+    outcome.setText("Your changes have been saved. Please logout and login again for changes to take effect");
     outcome.exec();
 
     this->close();
@@ -250,8 +252,42 @@ void SignupDialog::on_pushButton_4cancel_clicked()
 void SignupDialog::on_lineEdit_Email_editingFinished()
 {
     QString e = ui->lineEdit_Email->text();
+    bool hasAtSign, hasFullStops, doesExist;
 
-    testObject->emailAlreadyExists(e);
+//// ** Tests below **
+    hasAtSign = testObject->emailHasAtSign(e);
+    hasFullStops = testObject->emailHasFullStops(e);
+    doesExist = testObject->emailAlreadyExists(e);
 
+    if (!hasAtSign || !hasFullStops) {
+        ui->pushButton_submit->setEnabled(false);
+    } else if (doesExist) {
+//        ui->lineEdit_Email->clear();
+        ui->pushButton_submit->setEnabled(false);
+        ui->lineEdit_Email->clear();
+    }
+
+}
+
+
+void SignupDialog::on_lineEdit_4newEmail_editingFinished()
+{
+    QString e = ui->lineEdit_4newEmail->text();
+    bool hasAtSign, hasFullStops, doesExist;
+
+//// ** Tests below **
+    hasAtSign = testObject->emailHasAtSign(e);
+    hasFullStops = testObject->emailHasFullStops(e);
+    doesExist = testObject->emailAlreadyExists(e);
+
+    if (!hasAtSign || !hasFullStops) {
+        ui->pushButton_4save->setEnabled(false);
+    } else if (doesExist) {
+        ui->pushButton_4save->setEnabled(false);
+        ui->lineEdit_4newEmail->clear();
+    }
+
+    // still issues in this slot:
+    // if user types in email lineEdit but clears text, submit button wont work
 }
 

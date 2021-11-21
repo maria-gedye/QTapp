@@ -9,7 +9,7 @@ report_issues::report_issues(QWidget *parent) :
 
 }
 
-
+// add extra function to get the total count (count doesn't reset every time app is restarted)
  int report_issues::count = 0;
 
 report_issues::~report_issues()

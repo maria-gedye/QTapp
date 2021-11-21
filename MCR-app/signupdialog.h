@@ -52,6 +52,8 @@ private slots:
 
     void on_lineEdit_Email_editingFinished();
 
+    void on_lineEdit_4newEmail_editingFinished();
+
 private:
     Ui::SignupDialog *ui;
     Tests *testObject;
